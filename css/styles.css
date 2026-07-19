@@ -570,8 +570,8 @@ main {
   width: auto;
   height: 3.1rem;
   margin-bottom: 0;
-  background: #fff;
-  padding: 0.35rem 0.45rem;
+  background: transparent;
+  padding: 0;
 }
 
 .role__company-logo {
