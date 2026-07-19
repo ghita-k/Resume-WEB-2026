@@ -666,25 +666,34 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.5rem;
   margin: 1.15rem 0 0;
   padding: 0;
 }
 
 .tag-logos li {
   margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.65rem 0.35rem 0.4rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
 }
 
 .tag-logos img {
-  width: 1.85rem;
-  height: 1.85rem;
+  width: 1.15rem;
+  height: 1.15rem;
   object-fit: contain;
   display: block;
-  transition: transform 0.2s ease;
 }
 
-.tag-logos img:hover {
-  transform: translateY(-2px) scale(1.08);
+.tag-logos span {
+  line-height: 1;
+  white-space: nowrap;
 }
 
 /* Education */
