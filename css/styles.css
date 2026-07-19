@@ -568,10 +568,12 @@ main {
 
 .edu__logo--esin {
   width: auto;
-  height: 3.1rem;
+  height: 3.6rem;
+  max-width: min(100%, 18rem);
   margin-bottom: 0;
   background: transparent;
   padding: 0;
+  object-fit: contain;
 }
 
 .role__company-logo {
@@ -757,6 +759,21 @@ main {
   margin-top: 0.25rem;
   font-size: 0.88rem;
   color: var(--muted);
+}
+
+.edu__accreds {
+  display: inline-flex !important;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.45rem;
+}
+
+.edu__acred-logo {
+  width: auto;
+  height: 1.55rem;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .edu__place {
