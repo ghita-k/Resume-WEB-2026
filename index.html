@@ -12,29 +12,61 @@
       content="CV web de Ghita EL KADIRI — Ingénieure Cloud Computing & Virtualization, DevOps, DevSecOps. Azure, AWS, Terraform, Kubernetes."
     />
     <meta name="author" content="Ghita EL KADIRI" />
+    <meta name="theme-color" content="#e9eef2" />
     <title>Ghita EL KADIRI — Ingénieure Cloud & DevOps</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="atmosphere" aria-hidden="true">
+      <div class="atmosphere__wash"></div>
+      <svg class="atmosphere__mesh" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="meshStroke" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1f6f78" stop-opacity="0.22" />
+            <stop offset="100%" stop-color="#c4a574" stop-opacity="0.12" />
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#meshStroke)" stroke-width="1.2">
+          <path d="M80 120 H420 L520 220 H980" />
+          <path d="M160 280 H560 L640 360 H1080" />
+          <path d="M40 460 H300 L420 560 H860 L980 660" />
+          <path d="M220 80 V280 L320 380 V620" />
+          <path d="M640 40 V220 L760 340 V700" />
+          <path d="M920 100 V300 L1040 420 V720" />
+        </g>
+        <g fill="#1f6f78" fill-opacity="0.28">
+          <circle cx="420" cy="120" r="4" />
+          <circle cx="520" cy="220" r="4" />
+          <circle cx="560" cy="280" r="4" />
+          <circle cx="640" cy="360" r="4" />
+          <circle cx="300" cy="460" r="4" />
+          <circle cx="760" cy="340" r="4" />
+          <circle cx="980" cy="660" r="4" />
+        </g>
+      </svg>
       <div class="atmosphere__glow atmosphere__glow--a"></div>
       <div class="atmosphere__glow atmosphere__glow--b"></div>
-      <div class="atmosphere__grid"></div>
     </div>
 
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
     <header class="site-header">
-      <a class="logo" href="#top">GEK</a>
+      <a class="logo" href="#top" aria-label="Ghita EL KADIRI — accueil">
+        <span class="logo__mark">GEK</span>
+        <span class="logo__text">Ghita EL KADIRI</span>
+      </a>
       <nav class="nav" aria-label="Navigation principale">
-        <a href="#profil">Profil</a>
-        <a href="#experience">Expérience</a>
-        <a href="#competences">Compétences</a>
-        <a href="#projets">Projets</a>
+        <a href="#profil" data-nav>Profil</a>
+        <a href="#experience" data-nav>Expérience</a>
+        <a href="#competences" data-nav>Compétences</a>
+        <a href="#projets" data-nav>Projets</a>
         <a href="#contact" class="nav__cta">Contact</a>
       </nav>
       <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
@@ -43,19 +75,23 @@
     </header>
 
     <main id="top">
-      <section class="hero">
-        <p class="hero__eyebrow reveal">Rabat, Maroc · Ouverte aux opportunités</p>
+      <section class="hero" id="contenu">
+        <p class="hero__eyebrow reveal">
+          <span class="pulse" aria-hidden="true"></span>
+          Rabat, Maroc · Ouverte aux opportunités
+        </p>
         <h1 class="hero__name reveal">
-          <span>Ghita</span>
-          <span>EL KADIRI</span>
+          <span class="hero__name-line">Ghita</span>
+          <span class="hero__name-line hero__name-line--accent">EL KADIRI</span>
         </h1>
         <p class="hero__title reveal">
-          Ingénieure Cloud Computing &amp; Virtualization · DevOps · DevSecOps
+          Ingénieure Cloud Computing &amp; Virtualization
+          <em>DevOps · DevSecOps</em>
         </p>
         <p class="hero__lead reveal">
-          4× certifiée (Azure, AWS, Red Hat, DevOps). J’automatise des infrastructures
-          Azure sécurisées, des pipelines CI/CD et des déploiements orchestrés avec
-          Terraform, Ansible, Docker et Kubernetes.
+          4× certifiée (Azure, AWS, Red Hat, DevOps). J’automatise des
+          infrastructures Azure sécurisées, des pipelines CI/CD et des
+          déploiements orchestrés avec Terraform, Ansible, Docker et Kubernetes.
         </p>
         <div class="hero__actions reveal">
           <a class="btn btn--primary" href="mailto:ekghita@gmail.com">Me contacter</a>
@@ -66,7 +102,9 @@
             rel="noopener noreferrer"
             >LinkedIn</a
           >
-          <a class="btn btn--ghost" href="#experience">Voir l’expérience</a>
+          <button class="btn btn--ghost" type="button" onclick="window.print()">
+            Exporter PDF
+          </button>
         </div>
         <ul class="hero__meta reveal" aria-label="Coordonnées">
           <li><a href="tel:+212637309266">+212 6 37 30 92 66</a></li>
@@ -85,20 +123,22 @@
       <section id="profil" class="section">
         <div class="section__head reveal">
           <p class="section__label">01 — Profil</p>
-          <h2>Ingénieure Cloud orientée automatisation et fiabilité</h2>
+          <h2>Automatisation, sécurité et fiabilité Cloud</h2>
         </div>
-        <p class="profile-text reveal">
-          Ingénieure Cloud Computing &amp; Virtualization, DevOps, 4× certifiée
-          (Azure, AWS, Red Hat, DevOps), expérimentée dans l’automatisation
-          d’infrastructures sécurisées Azure, la mise en place de pipelines CI/CD,
-          les solutions de monitoring, la virtualisation et l’orchestration de
-          déploiements avec Terraform, Ansible, Azure DevOps, Docker et Kubernetes.
-        </p>
-        <div class="cert-strip reveal" aria-label="Certifications clés">
-          <span>AZ-104</span>
-          <span>AZ-900</span>
-          <span>AWS Cloud Practitioner</span>
-          <span>Red Hat DO180</span>
+        <div class="profile-block reveal">
+          <p class="profile-text">
+            Ingénieure Cloud Computing &amp; Virtualization, DevOps, 4× certifiée
+            (Azure, AWS, Red Hat, DevOps), expérimentée dans l’automatisation
+            d’infrastructures sécurisées Azure, la mise en place de pipelines CI/CD,
+            les solutions de monitoring, la virtualisation et l’orchestration de
+            déploiements avec Terraform, Ansible, Azure DevOps, Docker et Kubernetes.
+          </p>
+          <div class="cert-strip" aria-label="Certifications clés">
+            <span>AZ-104</span>
+            <span>AZ-900</span>
+            <span>AWS Practitioner</span>
+            <span>Red Hat DO180</span>
+          </div>
         </div>
       </section>
 
@@ -108,89 +148,91 @@
           <h2>Parcours professionnel</h2>
         </div>
 
-        <article class="role reveal">
-          <div class="role__meta">
-            <p class="role__date">Fév. 2025 — Août 2025</p>
-            <p class="role__place">Rabat, Maroc</p>
-          </div>
-          <div class="role__body">
-            <h3>Ingénieure Cloud DevOps</h3>
-            <p class="role__org">AXA Global Business Services (AXA GBS)</p>
-            <ul>
-              <li>
-                Automatisé le déploiement end-to-end d’une infrastructure de
-                supervision Dynatrace SaaS sur Microsoft Azure avec Terraform (IaC),
-                Ansible, Azure DevOps, Monaco et 4 pipelines CI/CD YAML.
-              </li>
-              <li>
-                Déployé une architecture Cloud sécurisée sur Azure avec Terraform :
-                4 VM Ubuntu, VNet, subnet, IP publiques, Azure Load Balancer, NSG,
-                DNS privé, Azure WebJobs et IAM (RBAC).
-              </li>
-              <li>
-                Industrialisé le provisionnement Cloud et la supervision via CI/CD :
-                ActiveGate sur 2 machines dédiées, OneAgent sur 3 hôtes cibles,
-                validation du statut monitored dans Dynatrace.
-              </li>
-              <li>
-                Développé une sauvegarde automatisée des configurations Dynatrace
-                avec Monaco, Bash, Azure WebJob et Azure Blob Storage.
-              </li>
-              <li>
-                Sécurisé l’environnement avec NSG, SSH, tokens API, variables
-                secrètes Azure DevOps et IAM par RBAC.
-              </li>
-            </ul>
-            <p class="tags">
-              Azure · Terraform · Ansible · Azure DevOps · Dynatrace · Monaco · CI/CD
-            </p>
-          </div>
-        </article>
+        <div class="timeline">
+          <article class="role reveal">
+            <div class="role__meta">
+              <p class="role__date">Fév. 2025 — Août 2025</p>
+              <p class="role__place">Rabat, Maroc</p>
+            </div>
+            <div class="role__body">
+              <h3>Ingénieure Cloud DevOps</h3>
+              <p class="role__org">AXA Global Business Services (AXA GBS)</p>
+              <ul>
+                <li>
+                  Automatisé le déploiement end-to-end d’une infrastructure de
+                  supervision Dynatrace SaaS sur Microsoft Azure avec Terraform
+                  (IaC), Ansible, Azure DevOps, Monaco et 4 pipelines CI/CD YAML.
+                </li>
+                <li>
+                  Déployé une architecture Cloud sécurisée sur Azure avec Terraform :
+                  4 VM Ubuntu, VNet, subnet, IP publiques, Azure Load Balancer, NSG,
+                  DNS privé, Azure WebJobs et IAM (RBAC).
+                </li>
+                <li>
+                  Industrialisé le provisionnement Cloud et la supervision via CI/CD :
+                  ActiveGate sur 2 machines dédiées, OneAgent sur 3 hôtes cibles,
+                  validation du statut monitored dans Dynatrace.
+                </li>
+                <li>
+                  Développé une sauvegarde automatisée des configurations Dynatrace
+                  avec Monaco, Bash, Azure WebJob et Azure Blob Storage.
+                </li>
+                <li>
+                  Sécurisé l’environnement avec NSG, SSH, tokens API, variables
+                  secrètes Azure DevOps et IAM par RBAC.
+                </li>
+              </ul>
+              <p class="tags">
+                Azure · Terraform · Ansible · Azure DevOps · Dynatrace · Monaco · CI/CD
+              </p>
+            </div>
+          </article>
 
-        <article class="role reveal">
-          <div class="role__meta">
-            <p class="role__date">Juin 2024 — Août 2024</p>
-            <p class="role__place">Rabat, Maroc</p>
-          </div>
-          <div class="role__body">
-            <h3>Systèmes et virtualisation</h3>
-            <p class="role__org">ONEE — Branche Eau</p>
-            <ul>
-              <li>
-                Analysé les plateformes d’infrastructure standard, convergée et
-                hyperconvergée, et leur évolution vers des environnements Cloud
-                virtualisés et hautement disponibles.
-              </li>
-              <li>
-                Comparé les architectures Dell EMC et VMware ESXi selon performance,
-                évolutivité, gestion des ressources et besoins métiers.
-              </li>
-            </ul>
-            <p class="tags">VMware ESXi · Dell EMC · Virtualisation · Cloud</p>
-          </div>
-        </article>
+          <article class="role reveal">
+            <div class="role__meta">
+              <p class="role__date">Juin 2024 — Août 2024</p>
+              <p class="role__place">Rabat, Maroc</p>
+            </div>
+            <div class="role__body">
+              <h3>Systèmes et virtualisation</h3>
+              <p class="role__org">ONEE — Branche Eau</p>
+              <ul>
+                <li>
+                  Analysé les plateformes d’infrastructure standard, convergée et
+                  hyperconvergée, et leur évolution vers des environnements Cloud
+                  virtualisés et hautement disponibles.
+                </li>
+                <li>
+                  Comparé les architectures Dell EMC et VMware ESXi selon
+                  performance, évolutivité, gestion des ressources et besoins métiers.
+                </li>
+              </ul>
+              <p class="tags">VMware ESXi · Dell EMC · Virtualisation · Cloud</p>
+            </div>
+          </article>
 
-        <article class="role reveal">
-          <div class="role__meta">
-            <p class="role__date">Juin 2023 — Juil. 2023</p>
-            <p class="role__place">Rabat, Maroc</p>
-          </div>
-          <div class="role__body">
-            <h3>Développeuse Full Stack</h3>
-            <p class="role__org">Assurances Lyazidi</p>
-            <ul>
-              <li>
-                Réalisé une analyse de l’e-réputation de l’entreprise et intégré des
-                données CSV dans une base de données.
-              </li>
-              <li>
-                Vérifié et validé l’affichage des données sur le site web pour
-                garantir leur bonne intégration.
-              </li>
-            </ul>
-            <p class="tags">MySQL · MariaDB · PHP · Java · Intégration de données</p>
-          </div>
-        </article>
+          <article class="role reveal">
+            <div class="role__meta">
+              <p class="role__date">Juin 2023 — Juil. 2023</p>
+              <p class="role__place">Rabat, Maroc</p>
+            </div>
+            <div class="role__body">
+              <h3>Développeuse Full Stack</h3>
+              <p class="role__org">Assurances Lyazidi</p>
+              <ul>
+                <li>
+                  Réalisé une analyse de l’e-réputation de l’entreprise et intégré
+                  des données CSV dans une base de données.
+                </li>
+                <li>
+                  Vérifié et validé l’affichage des données sur le site web pour
+                  garantir leur bonne intégration.
+                </li>
+              </ul>
+              <p class="tags">MySQL · MariaDB · PHP · Java · Intégration de données</p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section id="formation" class="section">
@@ -204,7 +246,7 @@
             <h3>Cloud Computing &amp; Virtualization Engineer</h3>
             <p class="edu__school">
               Université Internationale de Rabat — ESIN
-              <span>(CTI · ABET · EUR-ACE)</span>
+              <span>Accréditations CTI · ABET · EUR-ACE</span>
             </p>
             <p class="edu__place">Rabat, Maroc</p>
           </article>
@@ -290,7 +332,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <strong>AWS Cloud Practitioner 2023 — Automatisation et services gérés</strong>
+              <strong>AWS Cloud Practitioner — Automatisation et services gérés</strong>
               <span>Amazon Web Services · 2025</span>
             </a>
           </li>
@@ -320,67 +362,81 @@
         </div>
         <div class="projects">
           <article class="project reveal">
-            <h3>Déploiement end-to-end d’une application full-stack</h3>
-            <p>
-              Provisionnement Azure, CI/CD, conteneurisation et observabilité sur un
-              parcours complet de développement à la production.
-            </p>
-            <p class="tags">
-              Azure · Azure DevOps · Terraform · Docker · Kubernetes · AKS · ACR ·
-              SonarCloud · Prometheus · Grafana
-            </p>
+            <span class="project__index" aria-hidden="true">01</span>
+            <div>
+              <h3>Déploiement end-to-end d’une application full-stack</h3>
+              <p>
+                Provisionnement Azure, CI/CD, conteneurisation et observabilité sur
+                un parcours complet de développement à la production.
+              </p>
+              <p class="tags">
+                Azure · Azure DevOps · Terraform · Docker · Kubernetes · AKS · ACR ·
+                SonarCloud · Prometheus · Grafana
+              </p>
+            </div>
           </article>
           <article class="project reveal">
-            <h3>Plateforme Cloud-Native de gestion et distribution vidéo</h3>
-            <p>
-              Architecture cloud-native pour gérer et distribuer du contenu vidéo :
-              IaC, CI/CD sécurisé, orchestration Kubernetes et tests de charge.
-            </p>
-            <p class="tags">
-              AKS · ACR · Blob Storage · Azure DevOps · Docker · Terraform · Ansible ·
-              Python · Locust
-            </p>
+            <span class="project__index" aria-hidden="true">02</span>
+            <div>
+              <h3>Plateforme Cloud-Native de gestion et distribution vidéo</h3>
+              <p>
+                Architecture cloud-native pour gérer et distribuer du contenu vidéo :
+                IaC, CI/CD sécurisé, orchestration Kubernetes et tests de charge.
+              </p>
+              <p class="tags">
+                AKS · ACR · Blob Storage · Azure DevOps · Docker · Terraform ·
+                Ansible · Python · Locust
+              </p>
+            </div>
           </article>
           <article class="project reveal">
-            <h3>Connectivité hybride Azure &amp; monitoring</h3>
-            <p>
-              Pattern réseau multi-site avec VPN Gateway, BGP, NSG et journalisation
-              centralisée via Log Analytics Workspace.
-            </p>
-            <p class="tags">
-              VPN Gateway · BGP · NSG · Log Analytics · Storage Account
-            </p>
+            <span class="project__index" aria-hidden="true">03</span>
+            <div>
+              <h3>Connectivité hybride Azure &amp; monitoring</h3>
+              <p>
+                Pattern réseau multi-site avec VPN Gateway, BGP, NSG et
+                journalisation centralisée via Log Analytics Workspace.
+              </p>
+              <p class="tags">
+                VPN Gateway · BGP · NSG · Log Analytics · Storage Account
+              </p>
+            </div>
           </article>
           <article class="project reveal">
-            <h3>Optimisation des services Cloud</h3>
-            <p>
-              Images Docker, orchestration multi-conteneurs et répartition de charge
-              pour une infrastructure scalable et résiliente.
-            </p>
-            <p class="tags">Docker · Load Balancers · CI/CD</p>
+            <span class="project__index" aria-hidden="true">04</span>
+            <div>
+              <h3>Optimisation des services Cloud</h3>
+              <p>
+                Images Docker, orchestration multi-conteneurs et répartition de
+                charge pour une infrastructure scalable et résiliente.
+              </p>
+              <p class="tags">Docker · Load Balancers · CI/CD</p>
+            </div>
           </article>
         </div>
       </section>
 
       <section id="contact" class="section section--contact">
-        <div class="section__head reveal">
-          <p class="section__label">07 — Contact</p>
-          <h2>Construisons la suite</h2>
-        </div>
-        <p class="contact-lead reveal">
-          Ouverte aux opportunités Cloud, DevOps et Platform Engineering.
-          Écrivons-nous pour échanger sur un besoin, un projet ou une opportunité.
-        </p>
-        <div class="contact-actions reveal">
-          <a class="btn btn--primary" href="mailto:ekghita@gmail.com">ekghita@gmail.com</a>
-          <a class="btn btn--ghost" href="tel:+212637309266">+212 6 37 30 92 66</a>
-          <a
-            class="btn btn--ghost"
-            href="https://www.linkedin.com/in/ghita-el-kadiri/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Profil LinkedIn</a
-          >
+        <div class="contact-panel reveal">
+          <div class="section__head">
+            <p class="section__label">07 — Contact</p>
+            <h2>Construisons la suite</h2>
+          </div>
+          <p class="contact-lead">
+            Ouverte aux opportunités Cloud, DevOps et Platform Engineering.
+            Écrivons-nous pour échanger sur un besoin, un projet ou une opportunité.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn--primary" href="mailto:ekghita@gmail.com">ekghita@gmail.com</a>
+            <a class="btn btn--ghost" href="tel:+212637309266">+212 6 37 30 92 66</a>
+            <a
+              class="btn btn--ghost"
+              href="https://www.linkedin.com/in/ghita-el-kadiri/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Profil LinkedIn</a
+            >
+          </div>
         </div>
       </section>
     </main>

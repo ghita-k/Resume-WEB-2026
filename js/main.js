@@ -4,6 +4,8 @@
   const nav = document.querySelector(".nav");
   const year = document.querySelector("#year");
   const reveals = document.querySelectorAll(".reveal");
+  const sections = document.querySelectorAll("main section[id]");
+  const navLinks = document.querySelectorAll("[data-nav]");
 
   if (year) {
     year.textContent = String(new Date().getFullYear());
@@ -18,6 +20,12 @@
   onScroll();
 
   if (toggle && nav) {
+    const closeNav = () => {
+      nav.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Ouvrir le menu");
+    };
+
     toggle.addEventListener("click", () => {
       const open = !nav.classList.contains("is-open");
       nav.classList.toggle("is-open", open);
@@ -26,23 +34,19 @@
     });
 
     nav.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        nav.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
-        toggle.setAttribute("aria-label", "Ouvrir le menu");
-      });
+      link.addEventListener("click", closeNav);
     });
   }
 
   const markVisible = (el) => el.classList.add("is-visible");
 
   if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
+    const revealObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             markVisible(entry.target);
-            observer.unobserve(entry.target);
+            revealObserver.unobserve(entry.target);
           }
         });
       },
@@ -50,14 +54,29 @@
     );
 
     reveals.forEach((el, index) => {
-      // Hero uses CSS load animation; still mark visible for consistency
       if (el.closest(".hero")) {
         markVisible(el);
         return;
       }
-      el.style.transitionDelay = `${Math.min(index % 6, 5) * 45}ms`;
-      observer.observe(el);
+      el.style.transitionDelay = `${Math.min(index % 6, 5) * 50}ms`;
+      revealObserver.observe(el);
     });
+
+    const navObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const id = entry.target.getAttribute("id");
+          navLinks.forEach((link) => {
+            const active = link.getAttribute("href") === `#${id}`;
+            link.classList.toggle("is-active", active);
+          });
+        });
+      },
+      { rootMargin: "-35% 0px -55% 0px", threshold: 0 }
+    );
+
+    sections.forEach((section) => navObserver.observe(section));
   } else {
     reveals.forEach(markVisible);
   }
