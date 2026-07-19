@@ -581,6 +581,20 @@ main {
   height: auto;
 }
 
+.role__company-logo--lyazidi {
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 0;
+  background: transparent;
+}
+
+.role__company-logo--lyazidi img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 .role__org {
   margin: 0.4rem 0 1rem;
   color: var(--ink-soft);
