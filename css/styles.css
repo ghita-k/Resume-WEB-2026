@@ -554,10 +554,10 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0.85rem;
-  width: 3.25rem;
-  height: 3.25rem;
-  padding: 0.15rem;
+  margin-top: 0.95rem;
+  width: 4.75rem;
+  height: 4.75rem;
+  padding: 0.2rem;
   border: 1px solid var(--line);
   background: #fff;
 }
@@ -570,10 +570,10 @@ main {
 
 .role__company-logo--wide {
   width: 100%;
-  max-width: 9.5rem;
+  max-width: 10.5rem;
   height: auto;
   aspect-ratio: 280 / 90;
-  padding: 0.2rem;
+  padding: 0.25rem;
 }
 
 .role__company-logo--wide svg {
