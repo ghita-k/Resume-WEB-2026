@@ -550,6 +550,14 @@ main {
   object-fit: contain;
 }
 
+.edu__logo--uir {
+  width: auto;
+  height: 4.5rem;
+  margin-bottom: 0.85rem;
+  border: 0;
+  background: transparent;
+}
+
 .role__company-logo {
   display: inline-flex;
   align-items: center;
