@@ -762,25 +762,29 @@ main {
 }
 
 .edu__accreds {
-  display: inline-flex !important;
+  display: flex !important;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 2.75rem;
-  row-gap: 0.75rem;
+  column-gap: 1.5rem;
+  row-gap: 0.65rem;
+  max-width: 100%;
+  margin-top: 0.45rem;
 }
 
 .edu__acred-logo {
   width: auto;
   height: 3rem;
+  max-width: 100%;
   object-fit: contain;
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  flex: 0 0 auto;
   margin: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .edu__acred-logo--abet {
-  height: 3rem;
-  margin-left: 0.5rem;
+  height: 3.15rem;
 }
 
 .edu__place {
