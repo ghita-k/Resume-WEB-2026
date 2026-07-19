@@ -550,39 +550,52 @@ main {
   object-fit: contain;
 }
 
-.role__heading {
+.role__company {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.role__heading .org-logo {
-  width: 3rem;
-  height: 3rem;
-  margin: 0;
-  flex-shrink: 0;
+  gap: 0.85rem;
+  margin: 0.75rem 0 1.1rem;
+  padding: 0.65rem 0.75rem;
   border: 1px solid var(--line);
-  background: #fff;
-  object-fit: contain;
-  padding: 0.2rem;
+  background: rgba(255, 255, 255, 0.72);
 }
 
-.role__heading .org-logo--wide {
+.role__company-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #fff;
+}
+
+.role__company-logo svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.role__company-logo--wide {
   width: auto;
   height: 3rem;
-  max-width: 10.5rem;
-  padding: 0.25rem 0.35rem;
+  min-width: 8.5rem;
 }
 
-.role__heading h3 {
-  margin: 0;
+.role__company-logo--wide svg {
+  width: auto;
+  height: 100%;
+  max-width: 11rem;
 }
 
 .role__org {
-  margin: 0.35rem 0 0;
+  margin: 0;
   color: var(--ink-soft);
   font-weight: 600;
+}
+
+.role__body h3 {
+  font-size: 1.45rem;
 }
 
 /* Experience timeline */
@@ -631,10 +644,6 @@ main {
   margin: 0.35rem 0 0;
   color: var(--muted);
   font-size: 0.92rem;
-}
-
-.role__body h3 {
-  font-size: 1.45rem;
 }
 
 .tags {
