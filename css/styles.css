@@ -617,16 +617,47 @@ main {
   color: var(--accent-deep);
 }
 
-/* Reveal motion */
-.reveal {
+/* Reveal motion — only when JS is active, so content stays readable without it */
+html.js .reveal {
   opacity: 0;
   transform: translateY(22px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.reveal.is-visible {
+html.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Hero appears immediately on load */
+html.js .hero .reveal {
+  animation: heroIn 0.85s ease forwards;
+}
+
+html.js .hero .reveal:nth-child(1) {
+  animation-delay: 0.05s;
+}
+html.js .hero .reveal:nth-child(2) {
+  animation-delay: 0.12s;
+}
+html.js .hero .reveal:nth-child(3) {
+  animation-delay: 0.2s;
+}
+html.js .hero .reveal:nth-child(4) {
+  animation-delay: 0.28s;
+}
+html.js .hero .reveal:nth-child(5) {
+  animation-delay: 0.36s;
+}
+html.js .hero .reveal:nth-child(6) {
+  animation-delay: 0.44s;
+}
+
+@keyframes heroIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive */
@@ -702,13 +733,15 @@ main {
   }
 
   .atmosphere__glow,
-  .reveal,
+  html.js .reveal,
+  html.js .hero .reveal,
   .btn {
     animation: none !important;
     transition: none !important;
   }
 
-  .reveal {
+  html.js .reveal,
+  html.js .hero .reveal {
     opacity: 1;
     transform: none;
   }

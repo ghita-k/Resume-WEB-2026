@@ -34,12 +34,14 @@
     });
   }
 
+  const markVisible = (el) => el.classList.add("is-visible");
+
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
+            markVisible(entry.target);
             observer.unobserve(entry.target);
           }
         });
@@ -48,10 +50,15 @@
     );
 
     reveals.forEach((el, index) => {
+      // Hero uses CSS load animation; still mark visible for consistency
+      if (el.closest(".hero")) {
+        markVisible(el);
+        return;
+      }
       el.style.transitionDelay = `${Math.min(index % 6, 5) * 45}ms`;
       observer.observe(el);
     });
   } else {
-    reveals.forEach((el) => el.classList.add("is-visible"));
+    reveals.forEach(markVisible);
   }
 })();
