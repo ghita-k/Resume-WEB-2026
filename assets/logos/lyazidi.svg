@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" role="img"><title>Assurances Lyazidi</title><rect width="120" height="32" rx="2" fill="#8B1E3F"/><text x="60" y="21" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">LYAZIDI</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" role="img" aria-label="Assurances Lyazidi">
+  <rect width="280" height="64" rx="6" fill="#FBF6F7"/>
+  <rect x="6" y="6" width="52" height="52" rx="8" fill="#7A1F3D"/>
+  <path d="M19 44V22h10c7.2 0 12 3.8 12 11s-4.8 11-12 11H19zm10-6.5h2.4c3.2 0 5.2-1.6 5.2-4.5s-2-4.5-5.2-4.5H29v9zM51 44l-6.5-22h6.3l2.9 12.4L57 22h6.3L51 44z" fill="#fff"/>
+  <text x="72" y="30" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#7A1F3D" letter-spacing="1.5">LYAZIDI</text>
+  <text x="72" y="48" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#8A6A74" letter-spacing="1.8">ASSURANCES</text>
+</svg>

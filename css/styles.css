@@ -550,10 +550,39 @@ main {
   object-fit: contain;
 }
 
-.role__org {
+.role__heading {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.role__heading .org-logo {
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+  background: #fff;
+  object-fit: contain;
+  padding: 0.2rem;
+}
+
+.role__heading .org-logo--wide {
+  width: auto;
+  height: 3rem;
+  max-width: 10.5rem;
+  padding: 0.25rem 0.35rem;
+}
+
+.role__heading h3 {
+  margin: 0;
+}
+
+.role__org {
+  margin: 0.35rem 0 0;
+  color: var(--ink-soft);
+  font-weight: 600;
 }
 
 /* Experience timeline */
@@ -606,12 +635,6 @@ main {
 
 .role__body h3 {
   font-size: 1.45rem;
-}
-
-.role__org {
-  margin: 0.4rem 0 1rem;
-  color: var(--ink-soft);
-  font-weight: 600;
 }
 
 .tags {
