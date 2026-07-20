@@ -23,14 +23,14 @@
     const closeNav = () => {
       nav.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
-      toggle.setAttribute("aria-label", "Ouvrir le menu");
+      toggle.setAttribute("aria-label", "Open menu");
     };
 
     toggle.addEventListener("click", () => {
       const open = !nav.classList.contains("is-open");
       nav.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", String(open));
-      toggle.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     });
 
     nav.querySelectorAll("a").forEach((link) => {

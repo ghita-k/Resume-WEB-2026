@@ -1,33 +1,33 @@
-# CV Web — Ghita EL KADIRI
+# Web Resume — Ghita EL KADIRI
 
-CV web one-page pour **Ghita EL KADIRI**, Ingénieure Cloud / DevOps / DevSecOps.
+One-page web resume for **Ghita EL KADIRI**, Cloud / DevOps / DevSecOps Engineer.
 
-## Site en ligne (GitHub Pages)
+## Live site (GitHub Pages)
 
-URL prévue :
+Expected URL:
 
 **https://ghita-k.github.io/Resume-WEB-2026/**
 
-### Activer le site (une seule fois)
+### Enable the site (one-time)
 
-1. Ouvre le dépôt : https://github.com/ghita-k/Resume-WEB-2026
-2. Va dans **Settings → Pages**
-3. Sous **Build and deployment**, choisis **Source : GitHub Actions**
-4. Attends 1–2 minutes que le workflow `Deploy GitHub Pages` finisse
-5. Ouvre l’URL ci-dessus
+1. Open the repository: https://github.com/ghita-k/Resume-WEB-2026
+2. Go to **Settings → Pages**
+3. Under **Build and deployment**, set **Source: GitHub Actions**
+4. Wait 1–2 minutes for the `Deploy GitHub Pages` workflow
+5. Open the URL above
 
-Le site se met à jour automatiquement à chaque push sur `main`.
+The site updates automatically on every push to `main`.
 
-## Lancer en local
+## Run locally
 
 ### Windows
 ```bat
-cd chemin\vers\Resume-WEB-2026
+cd path\to\Resume-WEB-2026
 py -m http.server 8080
 ```
-Puis ouvrir `http://127.0.0.1:8080/`
+Then open `http://127.0.0.1:8080/`
 
-Ou double-cliquer `index.html`.
+Or double-click `index.html`.
 
 ### macOS / Linux
 ```bash
@@ -44,10 +44,10 @@ assets/
 .github/workflows/pages.yml
 ```
 
-## Fonctionnalités
+## Features
 
-- Design responsive (desktop / mobile)
-- Timeline d’expérience, navigation active au scroll
-- Animations d’apparition (respecte `prefers-reduced-motion`)
-- Bouton « Exporter PDF » / version imprimable
-- Déploiement automatique via GitHub Pages
+- Responsive design (desktop / mobile)
+- Experience timeline, active scroll navigation
+- Reveal animations (respects `prefers-reduced-motion`)
+- “Export PDF” / printable version
+- Automatic deployment via GitHub Pages
