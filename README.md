@@ -2,17 +2,11 @@
 
 One-page web resume **in English** for **Ghita EL KADIRI**, Cloud / DevOps / DevSecOps Engineer.
 
-French version: separate repository **[Resume-WEB-2026](https://github.com/ghita-k/Resume-WEB-2026)**.
-
-## Target repository
-
-This English CV should live in:
-
-**https://github.com/ghita-k/CV-WEB-English-2026**
+French version: **[Resume-WEB-2026](https://github.com/ghita-k/Resume-WEB-2026)**.
 
 ## Live site (GitHub Pages)
 
-Expected URL (after the EN repo exists and Pages is enabled):
+Expected URL:
 
 **https://ghita-k.github.io/CV-WEB-English-2026/**
 
