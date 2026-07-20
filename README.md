@@ -1,8 +1,22 @@
 # CV Web — Ghita EL KADIRI
 
-CV web one-page premium pour **Ghita EL KADIRI**, Ingénieure Cloud / DevOps / DevSecOps.
+CV web one-page pour **Ghita EL KADIRI**, Ingénieure Cloud / DevOps / DevSecOps.
 
-Contenu basé sur le CV PDF et le profil LinkedIn.
+## Site en ligne (GitHub Pages)
+
+URL prévue :
+
+**https://ghita-k.github.io/Resume-WEB-2026/**
+
+### Activer le site (une seule fois)
+
+1. Ouvre le dépôt : https://github.com/ghita-k/Resume-WEB-2026
+2. Va dans **Settings → Pages**
+3. Sous **Build and deployment**, choisis **Source : GitHub Actions**
+4. Attends 1–2 minutes que le workflow `Deploy GitHub Pages` finisse
+5. Ouvre l’URL ci-dessus
+
+Le site se met à jour automatiquement à chaque push sur `main`.
 
 ## Lancer en local
 
@@ -26,7 +40,8 @@ python3 -m http.server 8080
 index.html
 css/styles.css
 js/main.js
-assets/favicon.svg
+assets/
+.github/workflows/pages.yml
 ```
 
 ## Fonctionnalités
@@ -35,3 +50,4 @@ assets/favicon.svg
 - Timeline d’expérience, navigation active au scroll
 - Animations d’apparition (respecte `prefers-reduced-motion`)
 - Bouton « Exporter PDF » / version imprimable
+- Déploiement automatique via GitHub Pages
