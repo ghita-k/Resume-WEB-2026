@@ -835,12 +835,17 @@ main {
   background: rgba(255, 255, 255, 0.9);
 }
 
+.skill h3 {
+  font-size: 1.02rem;
+  margin-bottom: 0.65rem;
+}
+
 .skill__logos {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.55rem;
-  margin-bottom: 0.85rem;
+  margin: 0 0 0.75rem;
 }
 
 .skill__logo {
@@ -851,7 +856,7 @@ main {
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.72);
   font-size: 0.9rem;
-  font-weight: 650;
+  font-weight: 600;
   letter-spacing: 0.01em;
   color: var(--ink);
   line-height: 1.1;
@@ -867,11 +872,6 @@ main {
 
 .skill__logo span {
   white-space: nowrap;
-}
-
-.skill h3 {
-  font-size: 1.02rem;
-  margin-bottom: 0.4rem;
 }
 
 .skill p {
