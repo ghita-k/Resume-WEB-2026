@@ -2,7 +2,7 @@
 
 CV web one-page **en français** pour **Ghita EL KADIRI**, Ingénieure Cloud / DevOps / DevSecOps.
 
-Version anglaise : dépôt séparé **[Resume-WEB-2026-EN](https://github.com/ghita-k/Resume-WEB-2026-EN)** (à créer / déployer).
+Version anglaise : **[CV-WEB-English-2026](https://github.com/ghita-k/CV-WEB-English-2026)**.
 
 ## Site en ligne (GitHub Pages)
 
@@ -24,12 +24,12 @@ Le site se met à jour automatiquement à chaque push sur `main`.
 
 ### Windows
 ```bat
-cd chemin\vers\Resume-WEB-2026
+cd path\to\Resume-WEB-2026
 py -m http.server 8080
 ```
-Puis ouvrir `http://127.0.0.1:8080/`
+Puis ouvre `http://127.0.0.1:8080/`
 
-Ou double-cliquer `index.html`.
+Ou double-clique sur `index.html`.
 
 ### macOS / Linux
 ```bash
@@ -50,6 +50,6 @@ assets/
 
 - Design responsive (desktop / mobile)
 - Timeline d’expérience, navigation active au scroll
-- Animations d’apparition (respecte `prefers-reduced-motion`)
-- Bouton « Exporter PDF » / version imprimable
+- Animations reveal (respecte `prefers-reduced-motion`)
+- Export PDF / version imprimable
 - Déploiement automatique via GitHub Pages
