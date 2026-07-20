@@ -1,6 +1,8 @@
-# CV Web — Ghita EL KADIRI
+# CV Web (FR) — Ghita EL KADIRI
 
-CV web one-page pour **Ghita EL KADIRI**, Ingénieure Cloud / DevOps / DevSecOps.
+CV web one-page **en français** pour **Ghita EL KADIRI**, Ingénieure Cloud / DevOps / DevSecOps.
+
+Version anglaise : dépôt séparé **[Resume-WEB-2026-EN](https://github.com/ghita-k/Resume-WEB-2026-EN)** (à créer / déployer).
 
 ## Site en ligne (GitHub Pages)
 
