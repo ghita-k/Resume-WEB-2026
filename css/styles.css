@@ -576,6 +576,15 @@ main {
   object-fit: contain;
 }
 
+.edu__logo--uemf {
+  width: auto;
+  height: 4.1rem;
+  max-width: min(100%, 15rem);
+  margin-bottom: 0;
+  background: transparent;
+  object-fit: contain;
+}
+
 .role__company-logo {
   display: inline-flex;
   align-items: center;
