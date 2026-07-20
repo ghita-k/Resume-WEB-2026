@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 150" role="img" aria-label="Ecole Supérieure d’Informatique et du Numérique — UIR">
+  <!-- Ancien logo ESIN -->
+  <text x="6" y="98" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="700" fill="#1B2A4A">U</text>
+  <!-- Yellow i stem -->
+  <rect x="72" y="42" width="14" height="58" rx="1" fill="#F5C518"/>
+  <!-- Navy dot -->
+  <circle cx="79" cy="28" r="10" fill="#1B2A4A"/>
+  <text x="98" y="98" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="700" fill="#1B2A4A">R</text>
+
+  <line x1="178" y1="30" x2="178" y2="120" stroke="#A8AEB5" stroke-width="2"/>
+
+  <text x="200" y="55" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#6B7280">Ecole Supérieure</text>
+  <text x="200" y="84" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#6B7280">d’Informatique et du Numérique</text>
+  <text x="200" y="118" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" letter-spacing="1.1" fill="#A89BC8">COLLEGE OF ENGINEERING &amp; ARCHITECTURE</text>
+</svg>

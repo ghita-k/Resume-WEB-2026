@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.classList.remove("no-js");
+      document.documentElement.classList.add("js");
+    </script>
+    <meta
+      name="description"
+      content="CV web de Ghita EL KADIRI — Ingénieure Cloud Computing & Virtualization, DevOps, DevSecOps. Azure, AWS, Terraform, Kubernetes."
+    />
+    <meta name="author" content="Ghita EL KADIRI" />
+    <meta name="theme-color" content="#e9eef2" />
+    <title>Ghita EL KADIRI — Ingénieure Cloud & DevOps</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true">
+      <div class="atmosphere__wash"></div>
+      <svg class="atmosphere__mesh" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="meshStroke" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1f6f78" stop-opacity="0.22" />
+            <stop offset="100%" stop-color="#c4a574" stop-opacity="0.12" />
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#meshStroke)" stroke-width="1.2">
+          <path d="M80 120 H420 L520 220 H980" />
+          <path d="M160 280 H560 L640 360 H1080" />
+          <path d="M40 460 H300 L420 560 H860 L980 660" />
+          <path d="M220 80 V280 L320 380 V620" />
+          <path d="M640 40 V220 L760 340 V700" />
+          <path d="M920 100 V300 L1040 420 V720" />
+        </g>
+        <g fill="#1f6f78" fill-opacity="0.28">
+          <circle cx="420" cy="120" r="4" />
+          <circle cx="520" cy="220" r="4" />
+          <circle cx="560" cy="280" r="4" />
+          <circle cx="640" cy="360" r="4" />
+          <circle cx="300" cy="460" r="4" />
+          <circle cx="760" cy="340" r="4" />
+          <circle cx="980" cy="660" r="4" />
+        </g>
+      </svg>
+      <div class="atmosphere__glow atmosphere__glow--a"></div>
+      <div class="atmosphere__glow atmosphere__glow--b"></div>
+    </div>
+
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Ghita EL KADIRI — accueil">
+        <span class="logo__mark">GEK</span>
+        <span class="logo__text">Ghita EL KADIRI</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#profil" data-nav>Profil</a>
+        <a href="#experience" data-nav>Expérience</a>
+        <a href="#competences" data-nav>Compétences</a>
+        <a href="#projets" data-nav>Projets</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="contenu">
+        <p class="hero__eyebrow reveal">
+          <span class="pulse" aria-hidden="true"></span>
+          Rabat, Maroc · Mobile Internationale et ouverte aux opportunités
+        </p>
+        <h1 class="hero__name reveal">
+          <span class="hero__name-line">Ghita</span>
+          <span class="hero__name-line hero__name-line--accent">EL KADIRI</span>
+        </h1>
+        <p class="hero__title reveal">
+          Ingénieure Cloud Computing &amp; Virtualization
+          <em>DevOps · DevSecOps</em>
+        </p>
+        <p class="hero__lead reveal">
+          4× certifiée (Azure, AWS, Red Hat, DevOps). J’automatise des
+          infrastructures Azure sécurisées, des pipelines CI/CD et des
+          déploiements orchestrés avec Terraform, Ansible, Docker et Kubernetes.
+        </p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="mailto:ekghita@gmail.com">Me contacter</a>
+            <a
+              class="btn btn--ghost btn--icon"
+              href="https://www.linkedin.com/in/ghita-el-kadiri/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/logos/linkedin.svg" alt="" width="16" height="16" />
+              LinkedIn
+            </a>
+            <button class="btn btn--ghost" type="button" onclick="window.print()">
+              Exporter PDF
+            </button>
+          </div>
+        <ul class="hero__meta reveal" aria-label="Coordonnées">
+          <li><a href="mailto:ekghita@gmail.com">ekghita@gmail.com</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ghita-el-kadiri/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >linkedin.com/in/ghita-el-kadiri</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="profil" class="section">
+        <div class="section__head reveal">
+          <p class="section__label">01 — Profil</p>
+          <h2>Automatisation, sécurité et fiabilité Cloud</h2>
+        </div>
+        <div class="profile-block reveal">
+          <p class="profile-text">
+            Ingénieure Cloud Computing &amp; Virtualization, DevOps, 4× certifiée
+            (Azure, AWS, Red Hat, DevOps), expérimentée dans l’automatisation
+            d’infrastructures sécurisées Azure, la mise en place de pipelines CI/CD,
+            les solutions de monitoring, la virtualisation et l’orchestration de
+            déploiements avec Terraform, Ansible, Azure DevOps, Docker et Kubernetes.
+          </p>
+          <div class="cert-strip" aria-label="Certifications clés">
+            <span>AZ-104</span>
+            <span>AZ-900</span>
+            <span>AWS Practitioner</span>
+            <span>Red Hat DO180</span>
+          </div>
+        </div>
+        <ul class="logo-rail reveal" aria-label="Technologies principales">
+          <li>
+            <img src="assets/logos/azure.svg" alt="" width="28" height="28" />
+            <span>Microsoft Azure</span>
+          </li>
+          <li>
+            <img src="assets/logos/amazonwebservices.svg" alt="" width="28" height="28" />
+            <span>AWS</span>
+          </li>
+          <li>
+            <img src="assets/logos/terraform.svg" alt="" width="28" height="28" />
+            <span>Terraform</span>
+          </li>
+          <li>
+            <img src="assets/logos/ansible.svg" alt="" width="28" height="28" />
+            <span>Ansible</span>
+          </li>
+          <li>
+            <img src="assets/logos/docker.svg" alt="" width="28" height="28" />
+            <span>Docker</span>
+          </li>
+          <li>
+            <img src="assets/logos/kubernetes.svg" alt="" width="28" height="28" />
+            <span>Kubernetes</span>
+          </li>
+          <li>
+            <img src="assets/logos/azuredevops.svg" alt="" width="28" height="28" />
+            <span>Azure DevOps</span>
+          </li>
+          <li>
+            <img src="assets/logos/redhat.svg" alt="" width="28" height="28" />
+            <span>Red Hat</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section__head reveal">
+          <p class="section__label">02 — Expérience</p>
+          <h2>Parcours professionnel</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="role reveal">
+            <div class="role__meta">
+              <p class="role__date">Fév. 2025 — Août 2025</p>
+              <p class="role__place">Rabat, Maroc</p>
+              <span class="role__company-logo" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="56" height="56">
+                  <rect width="120" height="120" fill="#00008F"/>
+                  <polygon points="72,58 80,58 120,0 112,0" fill="#FF1721"/>
+                  <text x="60" y="78" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="42" font-weight="900" fill="#FFFFFF" letter-spacing="1">AXA</text>
+                </svg>
+              </span>
+            </div>
+            <div class="role__body">
+              <h3>Ingénieure Cloud DevOps</h3>
+              <p class="role__org">AXA Global Business Services (AXA GBS)</p>
+              <ul>
+                <li>
+                  Automatisé le déploiement end-to-end d’une infrastructure de
+                  supervision Dynatrace SaaS sur Microsoft Azure avec Terraform
+                  (IaC), Ansible, Azure DevOps, Monaco et 4 pipelines CI/CD YAML.
+                </li>
+                <li>
+                  Déployé une architecture Cloud sécurisée sur Azure avec Terraform :
+                  4 VM Ubuntu, VNet, subnet, IP publiques, Azure Load Balancer, NSG,
+                  DNS privé, Azure WebJobs et IAM (RBAC).
+                </li>
+                <li>
+                  Industrialisé le provisionnement Cloud et la supervision via CI/CD :
+                  ActiveGate sur 2 machines dédiées, OneAgent sur 3 hôtes cibles,
+                  validation du statut monitored dans Dynatrace.
+                </li>
+                <li>
+                  Développé une sauvegarde automatisée des configurations Dynatrace
+                  avec Monaco, Bash, Azure WebJob et Azure Blob Storage.
+                </li>
+                <li>
+                  Sécurisé l’environnement avec NSG, SSH, tokens API, variables
+                  secrètes Azure DevOps et IAM par RBAC.
+                </li>
+              </ul>
+              <ul class="tag-logos" aria-label="Technologies">
+                <li>
+                  <img src="assets/logos/azure.svg" alt="" width="22" height="22" />
+                  <span>Microsoft Azure</span>
+                </li>
+                <li>
+                  <img src="assets/logos/terraform.svg" alt="" width="22" height="22" />
+                  <span>Terraform</span>
+                </li>
+                <li>
+                  <img src="assets/logos/ansible.svg" alt="" width="22" height="22" />
+                  <span>Ansible</span>
+                </li>
+                <li>
+                  <img src="assets/logos/azuredevops.svg" alt="" width="22" height="22" />
+                  <span>Azure DevOps</span>
+                </li>
+                <li>
+                  <img src="assets/logos/dynatrace.svg" alt="" width="22" height="22" />
+                  <span>Dynatrace</span>
+                </li>
+                <li>
+                  <img src="assets/logos/monaco.svg" alt="" width="22" height="22" />
+                  <span>Monaco</span>
+                </li>
+                <li>
+                  <img src="assets/logos/cicd.svg" alt="" width="22" height="22" />
+                  <span>CI/CD</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role reveal">
+            <div class="role__meta">
+              <p class="role__date">Juin 2024 — Août 2024</p>
+              <p class="role__place">Rabat, Maroc</p>
+              <span class="role__company-logo role__company-logo--wide" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 90" width="150" height="48">
+                  <rect x="0" y="10" width="70" height="70" rx="10" fill="#0B7A4B"/>
+                  <path d="M18 55c10-18 24-18 34 0" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+                  <path d="M35 24v18" stroke="#F5C518" stroke-width="5" stroke-linecap="round"/>
+                  <path d="M26 33l9-9 9 9" fill="none" stroke="#F5C518" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="88" y="42" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" fill="#0B7A4B" letter-spacing="3">ONEE</text>
+                  <text x="88" y="66" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5B7168" letter-spacing="1.5">BRANCHE EAU</text>
+                </svg>
+              </span>
+            </div>
+            <div class="role__body">
+              <h3>Systèmes et virtualisation</h3>
+              <p class="role__org">ONEE — Branche Eau</p>
+              <ul>
+                <li>
+                  Analysé les plateformes d’infrastructure standard, convergée et
+                  hyperconvergée, et leur évolution vers des environnements Cloud
+                  virtualisés et hautement disponibles.
+                </li>
+                <li>
+                  Comparé les architectures Dell EMC et VMware ESXi selon
+                  performance, évolutivité, gestion des ressources et besoins métiers.
+                </li>
+              </ul>
+              <ul class="tag-logos" aria-label="Technologies">
+                <li>
+                  <img src="assets/logos/vmware.svg" alt="" width="22" height="22" />
+                  <span>VMware ESXi</span>
+                </li>
+                <li>
+                  <img src="assets/logos/dell.svg" alt="" width="22" height="22" />
+                  <span>Dell EMC</span>
+                </li>
+                <li>
+                  <img src="assets/logos/openstack.svg" alt="" width="22" height="22" />
+                  <span>Virtualisation</span>
+                </li>
+                <li>
+                  <img src="assets/logos/azure.svg" alt="" width="22" height="22" />
+                  <span>Cloud</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role reveal">
+            <div class="role__meta">
+              <p class="role__date">Juin 2023 — Juil. 2023</p>
+              <p class="role__place">Rabat, Maroc</p>
+              <span class="role__company-logo role__company-logo--lyazidi" aria-hidden="true">
+                <img src="assets/logos/lyazidi.svg" alt="Assurances Lyazidi" width="140" height="150" />
+              </span>
+            </div>
+            <div class="role__body">
+              <h3>Développeuse Full Stack</h3>
+              <p class="role__org">Assurances Lyazidi</p>
+              <ul>
+                <li>
+                  Réalisé une analyse de l’e-réputation de l’entreprise et intégré
+                  des données CSV dans une base de données.
+                </li>
+                <li>
+                  Vérifié et validé l’affichage des données sur le site web pour
+                  garantir leur bonne intégration.
+                </li>
+              </ul>
+              <ul class="tag-logos" aria-label="Technologies">
+                <li>
+                  <img src="assets/logos/mysql.svg" alt="" width="22" height="22" />
+                  <span>MySQL</span>
+                </li>
+                <li>
+                  <img src="assets/logos/mariadb.svg" alt="" width="22" height="22" />
+                  <span>MariaDB</span>
+                </li>
+                <li>
+                  <img src="assets/logos/php.svg" alt="" width="22" height="22" />
+                  <span>PHP</span>
+                </li>
+                <li>
+                  <img src="assets/logos/java.svg" alt="" width="22" height="22" />
+                  <span>Java</span>
+                </li>
+                <li>
+                  <img src="assets/logos/powerbi.svg" alt="" width="22" height="22" />
+                  <span>Power BI</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="formation" class="section">
+        <div class="section__head reveal">
+          <p class="section__label">03 — Formation</p>
+          <h2>Parcours académique</h2>
+        </div>
+        <div class="edu-grid">
+          <article class="edu reveal">
+            <div class="edu__logos">
+              <img class="edu__logo edu__logo--uir" src="assets/logos/uir.png" alt="Université Internationale de Rabat" width="120" height="104" />
+              <img class="edu__logo edu__logo--esin" src="assets/logos/esin.png" alt="Ecole Supérieure d’Informatique et du Numérique" width="280" height="80" />
+            </div>
+            <p class="edu__date">Sept. 2022 — Juil. 2025</p>
+            <h3>Cloud Computing &amp; Virtualization Engineer</h3>
+            <p class="edu__school">
+              Université Internationale de Rabat — ESIN
+              <span class="edu__accreds">
+                Accréditations
+                <img class="edu__acred-logo" src="assets/logos/cti.png" alt="CTI — Commission des titres d’ingénieur" title="CTI" width="64" height="63" />
+                <img class="edu__acred-logo edu__acred-logo--abet" src="assets/logos/abet.png" alt="ABET" title="ABET" width="64" height="67" />
+                <img class="edu__acred-logo edu__acred-logo--eurace" src="assets/logos/eur-ace.png" alt="EUR-ACE®" title="EUR-ACE®" width="220" height="50" />
+              </span>
+            </p>
+            <p class="edu__place">Rabat, Maroc</p>
+          </article>
+          <article class="edu reveal">
+            <div class="edu__logos">
+              <img class="edu__logo edu__logo--insa" src="assets/logos/insa-em.png" alt="INSA Euro-Méditerranée" width="280" height="64" />
+              <img class="edu__logo edu__logo--uemf" src="assets/logos/uemf.png" alt="Université Euro-Méditerranéenne de Fès" width="280" height="135" />
+            </div>
+            <p class="edu__date">Sept. 2019 — Juin 2022</p>
+            <h3>Classes Préparatoires Intégrées</h3>
+            <p class="edu__school">INSA Euro-Méditerranée de Fès</p>
+            <p class="edu__place">Fès, Maroc</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="competences" class="section">
+        <div class="section__head reveal">
+          <p class="section__label">04 — Compétences</p>
+          <h2>Stack technique</h2>
+        </div>
+        <div class="skills">
+          <article class="skill reveal">
+            <h3>Cloud &amp; Virtualisation</h3>
+            <div class="skill__logos">
+              <span class="skill__logo"><img src="assets/logos/azure.svg" alt="" width="36" height="36" /><span>Microsoft Azure</span></span>
+              <span class="skill__logo"><img src="assets/logos/amazonwebservices.svg" alt="" width="36" height="36" /><span>AWS</span></span>
+              <span class="skill__logo"><img src="assets/logos/openstack.svg" alt="" width="36" height="36" /><span>OpenStack</span></span>
+              <span class="skill__logo"><img src="assets/logos/vmware.svg" alt="" width="36" height="36" /><span>VMware</span></span>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <h3>DevOps, IaC &amp; CI/CD</h3>
+            <div class="skill__logos">
+              <span class="skill__logo"><img src="assets/logos/terraform.svg" alt="" width="36" height="36" /><span>Terraform</span></span>
+              <span class="skill__logo"><img src="assets/logos/ansible.svg" alt="" width="36" height="36" /><span>Ansible</span></span>
+              <span class="skill__logo"><img src="assets/logos/azuredevops.svg" alt="" width="36" height="36" /><span>Azure DevOps</span></span>
+              <span class="skill__logo"><img src="assets/logos/gitlab.svg" alt="" width="36" height="36" /><span>GitLab CI/CD</span></span>
+              <span class="skill__logo"><img src="assets/logos/git.svg" alt="" width="36" height="36" /><span>Git</span></span>
+              <span class="skill__logo"><img src="assets/logos/github.svg" alt="" width="36" height="36" /><span>GitHub</span></span>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <h3>Conteneurisation &amp; Orchestration</h3>
+            <div class="skill__logos">
+              <span class="skill__logo"><img src="assets/logos/docker.svg" alt="" width="36" height="36" /><span>Docker</span></span>
+              <span class="skill__logo"><img src="assets/logos/kubernetes.svg" alt="" width="36" height="36" /><span>Kubernetes</span></span>
+              <span class="skill__logo"><img src="assets/logos/aks.svg" alt="" width="36" height="36" /><span>AKS</span></span>
+              <span class="skill__logo"><img src="assets/logos/acr.svg" alt="" width="36" height="36" /><span>ACR</span></span>
+              <span class="skill__logo"><img src="assets/logos/redhat.svg" alt="" width="36" height="36" /><span>OpenShift</span></span>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <h3>Monitoring &amp; Observabilité</h3>
+            <div class="skill__logos">
+              <span class="skill__logo"><img src="assets/logos/prometheus.svg" alt="" width="36" height="36" /><span>Prometheus</span></span>
+              <span class="skill__logo"><img src="assets/logos/grafana.svg" alt="" width="36" height="36" /><span>Grafana</span></span>
+              <span class="skill__logo"><img src="assets/logos/dynatrace.svg" alt="" width="36" height="36" /><span>Dynatrace (Monaco)</span></span>
+              <span class="skill__logo"><img src="assets/logos/elasticsearch.svg" alt="" width="36" height="36" /><span>Elasticsearch</span></span>
+              <span class="skill__logo"><img src="assets/logos/logstash.svg" alt="" width="36" height="36" /><span>Logstash</span></span>
+              <span class="skill__logo"><img src="assets/logos/kibana.svg" alt="" width="36" height="36" /><span>Kibana</span></span>
+              <span class="skill__logo"><img src="assets/logos/jmeter.svg" alt="" width="36" height="36" /><span>Apache JMeter</span></span>
+              <span class="skill__logo"><img src="assets/logos/powerbi.svg" alt="" width="36" height="36" /><span>Power BI</span></span>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <h3>Réseaux &amp; Sécurité Cloud</h3>
+            <div class="skill__logos">
+              <span class="skill__logo"><img src="assets/logos/azure.svg" alt="" width="36" height="36" /><span>Microsoft Azure</span></span>
+              <span class="skill__logo"><img src="assets/logos/linux.svg" alt="" width="36" height="36" /><span>Linux</span></span>
+              <span class="skill__logo"><img src="assets/logos/nsg.svg" alt="" width="36" height="36" /><span>NSG</span></span>
+              <span class="skill__logo"><img src="assets/logos/iam-rbac.svg" alt="" width="36" height="36" /><span>IAM/RBAC</span></span>
+              <span class="skill__logo"><img src="assets/logos/ssh.svg" alt="" width="36" height="36" /><span>SSH</span></span>
+              <span class="skill__logo"><img src="assets/logos/load-balancer.svg" alt="" width="36" height="36" /><span>Load Balancer</span></span>
+              <span class="skill__logo"><img src="assets/logos/vpn-gateway.svg" alt="" width="36" height="36" /><span>VPN Gateway</span></span>
+              <span class="skill__logo"><img src="assets/logos/dns-prive.svg" alt="" width="36" height="36" /><span>DNS privé</span></span>
+              <span class="skill__logo"><img src="assets/logos/wireshark.svg" alt="" width="36" height="36" /><span>Wireshark</span></span>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <h3>Bases de données &amp; Big Data</h3>
+            <div class="skill__logos">
+              <span class="skill__logo"><img src="assets/logos/sqlserver.svg" alt="" width="36" height="36" /><span>SQL Server</span></span>
+              <span class="skill__logo"><img src="assets/logos/mysql.svg" alt="" width="36" height="36" /><span>MySQL</span></span>
+              <span class="skill__logo"><img src="assets/logos/mariadb.svg" alt="" width="36" height="36" /><span>MariaDB</span></span>
+              <span class="skill__logo"><img src="assets/logos/mongodb.svg" alt="" width="36" height="36" /><span>MongoDB</span></span>
+              <span class="skill__logo"><img src="assets/logos/nosql.svg" alt="" width="36" height="36" /><span>NoSQL</span></span>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <h3>Systèmes &amp; Langages</h3>
+            <div class="skill__logos">
+              <span class="skill__logo"><img src="assets/logos/ubuntu.svg" alt="" width="36" height="36" /><span>Ubuntu</span></span>
+              <span class="skill__logo"><img src="assets/logos/linux.svg" alt="" width="36" height="36" /><span>Linux</span></span>
+              <span class="skill__logo"><img src="assets/logos/python.svg" alt="" width="36" height="36" /><span>Python</span></span>
+              <span class="skill__logo"><img src="assets/logos/java.svg" alt="" width="36" height="36" /><span>Java</span></span>
+              <span class="skill__logo"><img src="assets/logos/c.svg" alt="" width="36" height="36" /><span>C</span></span>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <h3>Langues</h3>
+            <div class="skill__logos">
+              <span class="skill__logo"><img class="skill__logo-flag" src="assets/logos/arabe.svg" alt="" width="36" height="24" /><span>Arabe (maternelle)</span></span>
+              <span class="skill__logo"><img class="skill__logo-flag" src="assets/logos/francais.svg" alt="" width="36" height="24" /><span>Français (DALF C1)</span></span>
+              <span class="skill__logo"><img class="skill__logo-flag" src="assets/logos/anglais.svg" alt="" width="36" height="24" /><span>Anglais (intermédiaire)</span></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="certifications" class="section">
+        <div class="section__head reveal">
+          <p class="section__label">05 — Certifications</p>
+          <h2>Preuves de compétences</h2>
+        </div>
+        <ul class="certs">
+          <li class="reveal">
+            <a
+              href="https://learn.microsoft.com/api/credentials/share/fr-fr/ghitaelkadiri/209023173AEE1589?sharingId=EF1145D400DC1A48"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="cert__brand">
+                <img src="assets/logos/microsoft.svg" alt="" width="40" height="40" />
+                <strong>Microsoft Azure Administrator Associate (AZ-104)</strong>
+              </span>
+              <span>Microsoft · 2026</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a
+              href="https://learn.microsoft.com/api/credentials/share/fr-fr/GhitaELKADIRI-9326/D302E269587626A1?sharingId=F2FB9AA541911E00"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="cert__brand">
+                <img src="assets/logos/microsoft.svg" alt="" width="40" height="40" />
+                <strong>Microsoft Azure Fundamentals (AZ-900)</strong>
+              </span>
+              <span>Microsoft · 2024</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a
+              href="https://skillsoft.digitalbadges-eu.skillsoft.com/203b08b0-0dc3-4f80-91a3-48599a95bf89"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="cert__brand">
+                <img src="assets/logos/amazonwebservices.svg" alt="" width="40" height="40" />
+                <strong>AWS Cloud Practitioner — Automatisation et services gérés</strong>
+              </span>
+              <span>Amazon Web Services · 2025</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <div>
+              <span class="cert__brand">
+                <img src="assets/logos/redhat.svg" alt="" width="40" height="40" />
+                <strong>Red Hat OpenShift Administration I — DO180</strong>
+              </span>
+              <span>Red Hat · 2025</span>
+            </div>
+          </li>
+          <li class="reveal">
+            <a
+              href="https://coursera.org/account/accomplishments/records/KUN5270U3MN0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="cert__brand">
+                <img src="assets/logos/coursera.svg" alt="" width="40" height="40" />
+                <strong>Continuous Delivery and Managing Builds with Azure DevOps</strong>
+              </span>
+              <span>Coursera · 2025</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="projets" class="section">
+        <div class="section__head reveal">
+          <p class="section__label">06 — Projets</p>
+          <h2>Réalisations Cloud &amp; DevOps</h2>
+        </div>
+        <div class="projects">
+          <article class="project reveal">
+            <span class="project__index" aria-hidden="true">01</span>
+            <div>
+              <h3>Déploiement end-to-end d’une application full-stack</h3>
+              <p>
+                Provisionnement Azure, CI/CD, conteneurisation et observabilité sur
+                un parcours complet de développement à la production.
+              </p>
+              <ul class="tag-logos" aria-label="Technologies">
+                <li><img src="assets/logos/azure.svg" alt="" width="22" height="22" /><span>Microsoft Azure</span></li>
+                <li><img src="assets/logos/azuredevops.svg" alt="" width="22" height="22" /><span>Azure DevOps</span></li>
+                <li><img src="assets/logos/terraform.svg" alt="" width="22" height="22" /><span>Terraform</span></li>
+                <li><img src="assets/logos/docker.svg" alt="" width="22" height="22" /><span>Docker</span></li>
+                <li><img src="assets/logos/kubernetes.svg" alt="" width="22" height="22" /><span>Kubernetes</span></li>
+                <li><img src="assets/logos/aks.svg" alt="" width="22" height="22" /><span>AKS</span></li>
+                <li><img src="assets/logos/acr.svg" alt="" width="22" height="22" /><span>ACR</span></li>
+                <li><img src="assets/logos/sonarcloud.svg" alt="" width="22" height="22" /><span>SonarCloud</span></li>
+                <li><img src="assets/logos/prometheus.svg" alt="" width="22" height="22" /><span>Prometheus</span></li>
+                <li><img src="assets/logos/grafana.svg" alt="" width="22" height="22" /><span>Grafana</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="project reveal">
+            <span class="project__index" aria-hidden="true">02</span>
+            <div>
+              <h3>Plateforme Cloud-Native de gestion et distribution vidéo</h3>
+              <p>
+                Architecture cloud-native pour gérer et distribuer du contenu vidéo :
+                IaC, CI/CD sécurisé, orchestration Kubernetes et tests de charge.
+              </p>
+              <ul class="tag-logos" aria-label="Technologies">
+                <li><img src="assets/logos/azure.svg" alt="" width="22" height="22" /><span>Microsoft Azure</span></li>
+                <li><img src="assets/logos/aks.svg" alt="" width="22" height="22" /><span>AKS</span></li>
+                <li><img src="assets/logos/acr.svg" alt="" width="22" height="22" /><span>ACR</span></li>
+                <li><img src="assets/logos/blob-storage.svg" alt="" width="22" height="22" /><span>Azure Blob Storage</span></li>
+                <li><img src="assets/logos/azuredevops.svg" alt="" width="22" height="22" /><span>Azure DevOps</span></li>
+                <li><img src="assets/logos/docker.svg" alt="" width="22" height="22" /><span>Docker</span></li>
+                <li><img src="assets/logos/kubernetes.svg" alt="" width="22" height="22" /><span>Kubernetes</span></li>
+                <li><img src="assets/logos/terraform.svg" alt="" width="22" height="22" /><span>Terraform</span></li>
+                <li><img src="assets/logos/ansible.svg" alt="" width="22" height="22" /><span>Ansible</span></li>
+                <li><img src="assets/logos/python.svg" alt="" width="22" height="22" /><span>Python</span></li>
+                <li><img src="assets/logos/locust.svg" alt="" width="22" height="22" /><span>Locust</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="project reveal">
+            <span class="project__index" aria-hidden="true">03</span>
+            <div>
+              <h3>Connectivité hybride Azure &amp; monitoring</h3>
+              <p>
+                Pattern réseau multi-site avec VPN Gateway, BGP, NSG et
+                journalisation centralisée via Log Analytics Workspace.
+              </p>
+              <ul class="tag-logos" aria-label="Technologies">
+                <li><img src="assets/logos/vpn-gateway.svg" alt="" width="22" height="22" /><span>VPN Gateway</span></li>
+                <li><img src="assets/logos/bgp.svg" alt="" width="22" height="22" /><span>BGP</span></li>
+                <li><img src="assets/logos/log-analytics.svg" alt="" width="22" height="22" /><span>Log Analytics Workspace</span></li>
+                <li><img src="assets/logos/network-interface.svg" alt="" width="22" height="22" /><span>Network Interface</span></li>
+                <li><img src="assets/logos/nsg.svg" alt="" width="22" height="22" /><span>NSG</span></li>
+                <li><img src="assets/logos/storage-account.svg" alt="" width="22" height="22" /><span>Storage Account</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="project reveal">
+            <span class="project__index" aria-hidden="true">04</span>
+            <div>
+              <h3>Optimisation des services Cloud</h3>
+              <p>
+                Images Docker, orchestration multi-conteneurs et répartition de
+                charge pour une infrastructure scalable et résiliente.
+              </p>
+              <ul class="tag-logos" aria-label="Technologies">
+                <li><img src="assets/logos/docker.svg" alt="" width="22" height="22" /><span>Docker</span></li>
+                <li><img src="assets/logos/azure.svg" alt="" width="22" height="22" /><span>Load Balancers</span></li>
+                <li><img src="assets/logos/cicd.svg" alt="" width="22" height="22" /><span>CI/CD</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="project reveal">
+            <span class="project__index" aria-hidden="true">05</span>
+            <div>
+              <h3>Mise en place de la livraison continue et de la gestion des builds avec Azure DevOps</h3>
+              <p>
+                Conception de pipelines CI/CD, automatisation des builds et
+                industrialisation du déploiement continu avec Azure DevOps.
+              </p>
+              <ul class="tag-logos" aria-label="Technologies">
+                <li><img src="assets/logos/azuredevops.svg" alt="" width="22" height="22" /><span>Azure DevOps</span></li>
+                <li><img src="assets/logos/azure.svg" alt="" width="22" height="22" /><span>Microsoft Azure</span></li>
+                <li><img src="assets/logos/cicd.svg" alt="" width="22" height="22" /><span>CI/CD</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--contact">
+        <div class="contact-panel reveal">
+          <div class="section__head">
+            <p class="section__label">07 — Contact</p>
+            <h2>Construisons la suite</h2>
+          </div>
+          <p class="contact-lead">
+            Ouverte aux opportunités Cloud, DevOps et Platform Engineering.
+            Écrivons-nous pour échanger sur un besoin, un projet ou une opportunité.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn--primary" href="mailto:ekghita@gmail.com">ekghita@gmail.com</a>
+            <a
+              class="btn btn--ghost btn--icon"
+              href="https://www.linkedin.com/in/ghita-el-kadiri/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/logos/linkedin.svg" alt="" width="16" height="16" />
+              Profil LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Ghita EL KADIRI — CV Web</p>
+      <button type="button" class="print-btn" onclick="window.print()">Version imprimable</button>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
