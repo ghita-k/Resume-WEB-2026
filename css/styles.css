@@ -365,10 +365,30 @@ main {
   animation: pulse 2.2s ease-in-out infinite;
 }
 
+.hero__identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 1.75rem);
+}
+
+.hero__photo {
+  width: clamp(6.5rem, 14vw, 9.5rem);
+  height: clamp(6.5rem, 14vw, 9.5rem);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+  flex-shrink: 0;
+  border: 3px solid rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 12px 32px rgba(15, 23, 32, 0.14),
+    0 0 0 1px rgba(15, 23, 32, 0.06);
+}
+
 .hero__name {
   display: grid;
   gap: 0.05rem;
-  font-size: clamp(3.2rem, 9.5vw, 6.4rem);
+  font-size: clamp(2.6rem, 8vw, 6.4rem);
   font-weight: 800;
   letter-spacing: -0.05em;
   line-height: 0.92;
