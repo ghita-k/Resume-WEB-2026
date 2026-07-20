@@ -787,6 +787,11 @@ main {
   height: 3.15rem;
 }
 
+.edu__acred-logo--eurace {
+  height: 2.35rem;
+  width: auto;
+}
+
 .edu__place {
   margin: 0.8rem 0 0;
   color: var(--muted);
