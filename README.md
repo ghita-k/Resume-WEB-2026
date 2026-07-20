@@ -8,17 +8,17 @@ French version: separate repository **[Resume-WEB-2026](https://github.com/ghita
 
 This English CV should live in:
 
-**https://github.com/ghita-k/Resume-WEB-2026-EN**
+**https://github.com/ghita-k/CV-WEB-English-2026**
 
 ## Live site (GitHub Pages)
 
 Expected URL (after the EN repo exists and Pages is enabled):
 
-**https://ghita-k.github.io/Resume-WEB-2026-EN/**
+**https://ghita-k.github.io/CV-WEB-English-2026/**
 
 ### Enable the site (one-time)
 
-1. Open the repository: https://github.com/ghita-k/Resume-WEB-2026-EN
+1. Open the repository: https://github.com/ghita-k/CV-WEB-English-2026
 2. Go to **Settings → Pages**
 3. Under **Build and deployment**, set **Source: GitHub Actions**
 4. Wait 1–2 minutes for the `Deploy GitHub Pages` workflow
@@ -30,7 +30,7 @@ The site updates automatically on every push to `main`.
 
 ### Windows
 ```bat
-cd path\to\Resume-WEB-2026-EN
+cd path\to\CV-WEB-English-2026
 py -m http.server 8080
 ```
 Then open `http://127.0.0.1:8080/`
