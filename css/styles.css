@@ -585,6 +585,15 @@ main {
   object-fit: contain;
 }
 
+.edu__logo--insa {
+  width: auto;
+  height: 2.85rem;
+  max-width: min(100%, 16rem);
+  margin-bottom: 0;
+  background: transparent;
+  object-fit: contain;
+}
+
 .role__company-logo {
   display: inline-flex;
   align-items: center;
