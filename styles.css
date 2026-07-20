@@ -1,14 +1,15 @@
 :root {
-  --ink: #14202b;
-  --ink-soft: #3a4a57;
-  --muted: #5c6b78;
-  --line: rgba(20, 32, 43, 0.12);
-  --paper: #f7f4ef;
-  --paper-2: #efeae2;
-  --accent: #0f6e6a;
-  --accent-deep: #0a4f4c;
-  --accent-soft: rgba(15, 110, 106, 0.1);
-  --glow: rgba(15, 110, 106, 0.18);
+  --ink: #101820;
+  --ink-soft: #33404c;
+  --muted: #617080;
+  --line: rgba(16, 24, 32, 0.11);
+  --paper: #eef3f6;
+  --paper-2: #e4ebf0;
+  --surface: #f8fbfd;
+  --accent: #116a86;
+  --accent-deep: #0b4f66;
+  --accent-soft: rgba(17, 106, 134, 0.1);
+  --glow: rgba(17, 106, 134, 0.2);
   --serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Georgia,
     serif;
   --sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
@@ -48,16 +49,16 @@ body {
   pointer-events: none;
   background:
     radial-gradient(
-      1200px 600px at 8% -10%,
-      rgba(15, 110, 106, 0.14),
+      1100px 560px at 6% -12%,
+      rgba(17, 106, 134, 0.16),
       transparent 55%
     ),
     radial-gradient(
-      900px 500px at 100% 0%,
-      rgba(20, 32, 43, 0.06),
-      transparent 50%
+      900px 480px at 100% 8%,
+      rgba(16, 24, 32, 0.06),
+      transparent 52%
     ),
-    linear-gradient(180deg, #fbf9f5 0%, var(--paper) 35%, var(--paper-2) 100%);
+    linear-gradient(180deg, #f5f9fb 0%, var(--paper) 38%, var(--paper-2) 100%);
 }
 
 .page-bg::after {
@@ -138,7 +139,7 @@ body {
 .print-btn {
   margin-left: auto;
   border: 1px solid var(--line);
-  background: #fff;
+  background: var(--surface);
   color: var(--ink);
   font: inherit;
   font-size: 0.85rem;
@@ -166,6 +167,15 @@ body {
   max-width: var(--max);
   margin: 0 auto;
   padding: 2.5rem 1.25rem 4rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--surface) 92%, transparent),
+      color-mix(in srgb, var(--surface) 78%, transparent)
+    );
+  border: 1px solid color-mix(in srgb, var(--line) 85%, transparent);
+  border-radius: 4px;
+  box-shadow: 0 18px 50px rgba(16, 24, 32, 0.05);
 }
 
 .hero {
@@ -483,7 +493,9 @@ h2::after {
   }
 
   .cv {
-    padding: 3.25rem 1.5rem 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 3rem 2rem 4rem;
   }
 
   .split {
@@ -531,6 +543,10 @@ h2::after {
   .cv {
     max-width: none;
     padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   .hero {
