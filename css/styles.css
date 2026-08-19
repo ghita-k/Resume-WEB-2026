@@ -359,6 +359,7 @@ main {
 .hero__eyebrow {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.65rem;
   margin: 0 0 1.25rem;
   font-size: 0.86rem;
@@ -366,6 +367,8 @@ main {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent);
+  opacity: 1;
+  visibility: visible;
 }
 
 .pulse {
@@ -383,11 +386,6 @@ main {
   align-items: center;
   gap: clamp(1.25rem, 4vw, 2.25rem);
   margin: 0 0 0.35rem;
-}
-
-html.js .hero .hero__identity.reveal {
-  opacity: 0;
-  transform: translateY(18px) scale(0.98);
 }
 
 .hero__photo {
@@ -1212,10 +1210,17 @@ html.js .hero .hero__photo {
   animation: photoIn 0.9s 0.12s cubic-bezier(0.22, 1.15, 0.36, 1) both;
 }
 
-html.js .hero .reveal {
+html.js .hero .reveal,
+html.js .hero .word {
   opacity: 1;
   transform: none;
   animation: none;
+}
+
+html.js .hero__eyebrow,
+html.js .hero__eyebrow .word {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 @keyframes heroIn {

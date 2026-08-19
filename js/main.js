@@ -76,7 +76,6 @@
   document
     .querySelectorAll(
       [
-        ".hero__eyebrow",
         ".hero__name-line",
         ".hero__title",
         ".hero__lead",
@@ -122,7 +121,7 @@
     }
 
     const parts = root.querySelectorAll(
-      ".section__label, .section__head h2, .hero__eyebrow, .hero__name-line, .hero__title, .hero__lead, .profile-text, .role__body h3, .role__org, .role__body > ul:not(.tag-logos) > li, .edu h3, .edu__school, .skill h3, .project h3, .project p, .contact-lead, .contact-panel h2, .platform figcaption"
+      ".section__label, .section__head h2, .hero__name-line, .hero__title, .hero__lead, .profile-text, .role__body h3, .role__org, .role__body > ul:not(.tag-logos) > li, .edu h3, .edu__school, .skill h3, .project h3, .project p, .contact-lead, .contact-panel h2"
     );
 
     let time = 80;
