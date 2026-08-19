@@ -1196,43 +1196,26 @@ html.js .rise.is-visible {
   transform: none;
 }
 
+html.js .word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.55em);
+  transition: opacity 0.32s var(--ease), transform 0.38s cubic-bezier(0.22, 1.15, 0.36, 1);
+}
+
+html.js .word.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
 html.js .hero .hero__photo {
-  animation: photoIn 0.9s 0.18s cubic-bezier(0.22, 1.15, 0.36, 1) both;
-}
-
-html.js .hero .hero__name-line {
-  animation: heroIn 0.8s var(--ease) both;
-}
-
-html.js .hero .hero__name-line:first-child {
-  animation-delay: 0.22s;
-}
-
-html.js .hero .hero__name-line--accent {
-  animation-delay: 0.34s;
+  animation: photoIn 0.9s 0.12s cubic-bezier(0.22, 1.15, 0.36, 1) both;
 }
 
 html.js .hero .reveal {
-  animation: heroIn 0.85s var(--ease) forwards;
-}
-
-html.js .hero .reveal:nth-child(1) {
-  animation-delay: 0.05s;
-}
-html.js .hero .reveal:nth-child(2) {
-  animation-delay: 0.16s;
-}
-html.js .hero .reveal:nth-child(3) {
-  animation-delay: 0.28s;
-}
-html.js .hero .reveal:nth-child(4) {
-  animation-delay: 0.4s;
-}
-html.js .hero .reveal:nth-child(5) {
-  animation-delay: 0.52s;
-}
-html.js .hero .reveal:nth-child(6) {
-  animation-delay: 0.64s;
+  opacity: 1;
+  transform: none;
+  animation: none;
 }
 
 @keyframes heroIn {
@@ -1366,9 +1349,9 @@ html.js .hero .reveal:nth-child(6) {
   html.js .reveal,
   html.js .hero .reveal,
   html.js .rise,
+  html.js .word,
   html.js .site-header,
   html.js .hero .hero__photo,
-  html.js .hero .hero__name-line,
   .btn {
     animation: none !important;
     transition: none !important;
@@ -1377,9 +1360,9 @@ html.js .hero .reveal:nth-child(6) {
   html.js .reveal,
   html.js .hero .reveal,
   html.js .rise,
+  html.js .word,
   html.js .site-header,
-  html.js .hero .hero__photo,
-  html.js .hero .hero__name-line {
+  html.js .hero .hero__photo {
     opacity: 1;
     transform: none;
   }
@@ -1431,7 +1414,8 @@ html.js .hero .reveal:nth-child(6) {
   }
 
   html.js .reveal,
-  html.js .rise {
+  html.js .rise,
+  html.js .word {
     opacity: 1;
     transform: none;
   }
