@@ -41,16 +41,33 @@
   const markVisible = (el) => {
     el.classList.add("is-visible");
     el.querySelectorAll(":scope .rise").forEach((kid, i) => {
-      kid.style.transitionDelay = `${90 + i * 55}ms`;
+      const step = kid.classList.contains("rise--logo")
+        ? 70
+        : kid.classList.contains("rise--point")
+          ? 85
+          : 60;
+      kid.style.transitionDelay = `${120 + i * step}ms`;
       kid.classList.add("is-visible");
     });
   };
 
-  document
-    .querySelectorAll(
-      ".platform, .skill__logo, .logo-rail li, .cert-strip span, .tag-logos li, .edu__logo, .edu__acred-logo"
-    )
-    .forEach((el) => el.classList.add("rise"));
+  const tagRise = (selector, extraClass) => {
+    document.querySelectorAll(selector).forEach((el) => {
+      el.classList.add("rise");
+      if (extraClass) el.classList.add(extraClass);
+    });
+  };
+
+  tagRise(
+    ".platform, .skill__logo, .logo-rail li, .tag-logos li, .role__company-logo",
+    "rise--logo"
+  );
+  tagRise(".role__body > ul:not(.tag-logos) > li, .project p, .contact-lead", "rise--point");
+  tagRise(
+    ".cert-strip span, .edu__logo, .edu__acred-logo, .project__index, .contact-actions .btn",
+    "rise--chip"
+  );
+  tagRise(".role__body h3, .role__org, .edu h3, .skill h3, .project h3");
 
   const roleReveals = document.querySelectorAll(".role.reveal");
   roleReveals.forEach((el, i) => {
