@@ -1190,16 +1190,16 @@ main {
 /* Reveal */
 html.js .reveal {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  transform: translateY(20px);
+  transition: opacity 0.55s var(--ease), transform 0.6s var(--ease);
 }
 
 html.js .reveal.reveal--left {
-  transform: translateX(-32px);
+  transform: translateX(-24px);
 }
 
 html.js .reveal.reveal--right {
-  transform: translateX(32px);
+  transform: translateX(24px);
 }
 
 html.js .reveal.is-visible {
@@ -1209,24 +1209,24 @@ html.js .reveal.is-visible {
 
 html.js .rise {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.5s var(--ease), transform 0.55s cubic-bezier(0.22, 1.15, 0.36, 1);
+  transform: translateY(12px);
+  transition: opacity 0.45s var(--ease), transform 0.5s cubic-bezier(0.22, 1.15, 0.36, 1);
 }
 
 html.js .rise--logo {
-  transform: translateY(14px) scale(0.62);
+  transform: translateY(8px) scale(0.74);
 }
 
 html.js .rise--point {
-  transform: translateX(-22px);
+  transform: translateX(-18px);
 }
 
 html.js .rise--chip {
-  transform: translateY(12px) scale(0.86);
+  transform: translateY(8px) scale(0.9);
 }
 
 html.js .rise--badge {
-  transform: translateY(16px);
+  transform: translateY(10px);
 }
 
 html.js .rise.is-visible {
@@ -1241,8 +1241,8 @@ html.js .btn.rise.is-visible:hover {
 html.js .word {
   display: inline-block;
   opacity: 0;
-  transform: translateY(0.55em);
-  transition: opacity 0.32s var(--ease), transform 0.38s cubic-bezier(0.22, 1.15, 0.36, 1);
+  transform: translateY(0.4em);
+  transition: opacity 0.3s var(--ease), transform 0.34s cubic-bezier(0.22, 1.15, 0.36, 1);
 }
 
 html.js .word.is-visible {
@@ -1275,7 +1275,7 @@ html.js .hero.is-visible .hero__actions .btn,
 html.js .hero.is-visible .hero__meta li {
   opacity: 1;
   animation-name: heroIn;
-  animation-duration: 0.7s;
+  animation-duration: 0.55s;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(0.22, 1.15, 0.36, 1);
 }
@@ -1306,45 +1306,45 @@ html.js .site-header.is-in .nav-toggle {
 }
 
 html.js .hero.is-visible .hero__eyebrow {
-  animation-delay: 0.2s;
+  animation-delay: 0.06s;
 }
 
 html.js .hero.is-visible .hero__photo {
   animation-name: photoIn;
-  animation-duration: 0.85s;
-  animation-delay: 0.42s;
+  animation-duration: 0.6s;
+  animation-delay: 0.16s;
 }
 
 html.js .hero.is-visible .hero__name {
-  animation-delay: 0.68s;
+  animation-delay: 0.24s;
 }
 
 html.js .hero.is-visible .hero__title {
-  animation-delay: 0.98s;
+  animation-delay: 0.36s;
 }
 
 html.js .hero.is-visible .hero__lead {
-  animation-delay: 1.28s;
+  animation-delay: 0.48s;
 }
 
 html.js .hero.is-visible .hero__actions .btn:nth-child(1) {
-  animation-delay: 1.62s;
+  animation-delay: 0.6s;
 }
 
 html.js .hero.is-visible .hero__actions .btn:nth-child(2) {
-  animation-delay: 1.78s;
+  animation-delay: 0.68s;
 }
 
 html.js .hero.is-visible .hero__actions .btn:nth-child(3) {
-  animation-delay: 1.94s;
+  animation-delay: 0.76s;
 }
 
 html.js .hero.is-visible .hero__meta li:nth-child(1) {
-  animation-delay: 2.14s;
+  animation-delay: 0.84s;
 }
 
 html.js .hero.is-visible .hero__meta li:nth-child(2) {
-  animation-delay: 2.28s;
+  animation-delay: 0.92s;
 }
 
 html.js .contact-panel.reveal {
@@ -1365,29 +1365,29 @@ html.js .contact-panel.is-visible .contact-lead,
 html.js .contact-panel.is-visible .contact-actions .btn {
   opacity: 1;
   animation-name: heroIn;
-  animation-duration: 0.7s;
+  animation-duration: 0.55s;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(0.22, 1.15, 0.36, 1);
 }
 
 html.js .contact-panel.is-visible .section__label {
-  animation-delay: 0.08s;
+  animation-delay: 0.06s;
 }
 
 html.js .contact-panel.is-visible h2 {
-  animation-delay: 0.28s;
+  animation-delay: 0.18s;
 }
 
 html.js .contact-panel.is-visible .contact-lead {
-  animation-delay: 0.52s;
+  animation-delay: 0.32s;
 }
 
 html.js .contact-panel.is-visible .contact-actions .btn:nth-child(1) {
-  animation-delay: 0.88s;
+  animation-delay: 0.5s;
 }
 
 html.js .contact-panel.is-visible .contact-actions .btn:nth-child(2) {
-  animation-delay: 1.04s;
+  animation-delay: 0.6s;
 }
 
 @keyframes heroIn {
