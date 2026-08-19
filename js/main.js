@@ -42,7 +42,7 @@
   const skipWrap = (el) =>
     Boolean(
       el.closest(
-        "svg, script, style, button, .platform, .skill__logo, .tag-logos, .logo-rail, .cert-strip, .edu__logos, .edu__accreds, .role__company-logo, .hero__eyebrow, .hero__actions, .hero__meta, .hero__photo"
+        "svg, script, style, button, .platform, .skill__logo, .tag-logos, .logo-rail, .cert-strip, .edu__logos, .edu__accreds, .role__company-logo, .hero__eyebrow, .hero__name, .hero__title, .hero__lead, .hero__actions, .hero__meta, .hero__photo"
       )
     );
 
@@ -76,9 +76,6 @@
   document
     .querySelectorAll(
       [
-        ".hero__name-line",
-        ".hero__title",
-        ".hero__lead",
         ".profile-text",
         ".section__head h2",
         ".section__label",
@@ -101,7 +98,7 @@
     .forEach(wrapWords);
 
   document
-    .querySelectorAll(".hero__eyebrow, .hero__photo")
+    .querySelectorAll(".hero__eyebrow, .hero__photo, .hero__name, .hero__title, .hero__lead")
     .forEach((el) => el.classList.add("rise"));
 
   document
@@ -140,7 +137,7 @@
         ".section__head h2",
         ".hero__eyebrow",
         ".hero__photo",
-        ".hero__name-line",
+        ".hero__name",
         ".hero__title",
         ".hero__lead",
         ".hero__actions .btn",
@@ -176,15 +173,19 @@
     let time = 80;
     sequence.forEach((el) => {
       if (el.classList.contains("rise")) {
-        const step = el.classList.contains("hero__photo")
-          ? 260
-          : el.classList.contains("hero__eyebrow")
-            ? 180
-            : el.classList.contains("rise--badge")
-              ? 90
-              : el.classList.contains("rise--chip")
-                ? 70
-                : 110;
+        const step = el.classList.contains("hero__photo") || el.classList.contains("hero__name")
+          ? 280
+          : el.classList.contains("hero__title") || el.classList.contains("hero__lead")
+            ? 240
+            : el.classList.contains("hero__eyebrow")
+              ? 180
+              : el.classList.contains("hero__actions") || el.matches(".hero__actions .btn")
+                ? 130
+                : el.classList.contains("rise--badge")
+                  ? 90
+                  : el.classList.contains("rise--chip")
+                    ? 70
+                    : 110;
         show(el, time);
         time += step;
         return;
