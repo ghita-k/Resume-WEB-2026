@@ -637,13 +637,71 @@ html.js .hero .hero__identity.reveal {
   object-fit: contain;
 }
 
-.role__company-logos {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 0.4rem;
+.role__logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
   margin-top: 1rem;
   width: 100%;
+}
+
+.role__logo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 0;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 0.7rem;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.role__logo-card-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 3.35rem;
+  height: 3.35rem;
+  padding: 0.28rem;
+  overflow: hidden;
+}
+
+.role__logo-card-mark img,
+.role__logo-card-mark svg {
+  width: 2.8rem;
+  height: 2.8rem;
+  max-width: 100%;
+  max-height: 2.8rem;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.role__logo-card-name {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0.1rem 0.18rem 0.22rem;
+  font-size: 0.52rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.role__logo-card--teal {
+  background: #1f6f78;
+  border-color: transparent;
+}
+
+.role__logo-card--teal .role__logo-card-name {
+  color: #fff;
 }
 
 .role__company-logo {
@@ -656,46 +714,6 @@ html.js .hero .hero__identity.reveal {
   padding: 0;
   border: 0;
   background: transparent;
-}
-
-.role__company-logos .role__company-logo {
-  position: relative;
-  margin-top: 0;
-  width: 4.55rem;
-  height: 4.55rem;
-  flex: 0 0 4.55rem;
-  overflow: hidden;
-  border-radius: 0.7rem;
-}
-
-.role__company-logo--img {
-  padding: 0.28rem 0.28rem 0.85rem;
-  background: #fff;
-  border: 1px solid var(--line);
-}
-
-.role__company-logo--img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-.role__logo-label {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  padding: 0.16rem 0.12rem 0.2rem;
-  font-size: 0.48rem;
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: #fff;
-  background: linear-gradient(180deg, transparent, rgba(18, 32, 39, 0.82) 42%);
-  pointer-events: none;
 }
 
 .role__company-logo svg {
