@@ -89,8 +89,7 @@
         ".edu__date",
         ".edu__place",
         ".skill h3",
-        ".language h3",
-        ".language p",
+        ".languages h3",
         ".project h3",
         ".project p",
         ".contact-lead",
@@ -104,7 +103,7 @@
     .forEach((el) => el.classList.add("rise", "rise--logo"));
 
   document
-    .querySelectorAll(".skill__logo, .tag-logos li, .language__flag")
+    .querySelectorAll(".skill__logo, .tag-logos li")
     .forEach((el) => el.classList.add("rise", "rise--badge"));
 
   document
@@ -146,9 +145,7 @@
         ".edu__acred-logo",
         ".skill h3",
         ".skill__logo",
-        ".language h3",
-        ".language p",
-        ".language__flag",
+        ".languages h3",
         ".project__index",
         ".project h3",
         ".project p",
