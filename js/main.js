@@ -82,11 +82,15 @@
         ".profile-text",
         ".section__head h2",
         ".section__label",
+        ".role__date",
+        ".role__place",
         ".role__body h3",
         ".role__org",
         ".role__body > ul:not(.tag-logos) > li",
         ".edu h3",
         ".edu__school",
+        ".edu__date",
+        ".edu__place",
         ".skill h3",
         ".project h3",
         ".project p",
@@ -121,7 +125,7 @@
     }
 
     const parts = root.querySelectorAll(
-      ".section__label, .section__head h2, .hero__name-line, .hero__title, .hero__lead, .profile-text, .role__body h3, .role__org, .role__body > ul:not(.tag-logos) > li, .edu h3, .edu__school, .skill h3, .project h3, .project p, .contact-lead, .contact-panel h2"
+      ".section__label, .section__head h2, .hero__name-line, .hero__title, .hero__lead, .profile-text, .role__date, .role__place, .role__body h3, .role__org, .role__body > ul:not(.tag-logos) > li, .edu h3, .edu__school, .edu__date, .edu__place, .skill h3, .project h3, .project p, .contact-lead, .contact-panel h2"
     );
 
     let time = 80;
