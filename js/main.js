@@ -42,7 +42,7 @@
   const skipWrap = (el) =>
     Boolean(
       el.closest(
-        "svg, script, style, button, .platform, .skill__logo, .tag-logos, .logo-rail, .cert-strip, .edu__logos, .edu__accreds, .role__company-logo, .hero__eyebrow, .hero__name, .hero__title, .hero__lead, .hero__actions, .hero__meta, .hero__photo"
+        "svg, script, style, button, .platform, .skill__logo, .tag-logos, .logo-rail, .cert-strip, .edu__logos, .edu__accreds, .role__company-logo, .hero__eyebrow, .hero__name, .hero__title, .hero__lead, .hero__actions, .hero__meta, .hero__photo, .project__links"
       )
     );
 
