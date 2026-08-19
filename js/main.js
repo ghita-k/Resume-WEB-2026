@@ -38,7 +38,24 @@
     });
   }
 
-  const markVisible = (el) => el.classList.add("is-visible");
+  const markVisible = (el) => {
+    el.classList.add("is-visible");
+    el.querySelectorAll(":scope .rise").forEach((kid, i) => {
+      kid.style.transitionDelay = `${90 + i * 55}ms`;
+      kid.classList.add("is-visible");
+    });
+  };
+
+  document
+    .querySelectorAll(
+      ".platform, .skill__logo, .logo-rail li, .cert-strip span, .tag-logos li, .edu__logo, .edu__acred-logo"
+    )
+    .forEach((el) => el.classList.add("rise"));
+
+  const roleReveals = document.querySelectorAll(".role.reveal");
+  roleReveals.forEach((el, i) => {
+    el.classList.add(i % 2 === 0 ? "reveal--left" : "reveal--right");
+  });
 
   if ("IntersectionObserver" in window) {
     const revealObserver = new IntersectionObserver(
@@ -50,16 +67,24 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+      { threshold: 0.14, rootMargin: "0px 0px -6% 0px" }
     );
 
-    reveals.forEach((el, index) => {
-      if (el.closest(".hero")) {
-        markVisible(el);
-        return;
-      }
-      el.style.transitionDelay = `${Math.min(index % 6, 5) * 50}ms`;
-      revealObserver.observe(el);
+    const bySection = new Map();
+    reveals.forEach((el) => {
+      const section = el.closest("section") || document.body;
+      if (!bySection.has(section)) bySection.set(section, []);
+      bySection.get(section).push(el);
+    });
+
+    bySection.forEach((items) => {
+      items.forEach((el, index) => {
+        if (el.closest(".hero")) {
+          return;
+        }
+        el.style.transitionDelay = `${index * 95}ms`;
+        revealObserver.observe(el);
+      });
     });
 
     const navObserver = new IntersectionObserver(
