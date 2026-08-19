@@ -735,19 +735,9 @@ main {
   font-size: 1.45rem;
 }
 
-/* Experience timeline */
+/* Experience */
 .timeline {
   position: relative;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 11.35rem;
-  top: 0.35rem;
-  bottom: 0.35rem;
-  width: 1px;
-  background: linear-gradient(180deg, var(--accent), rgba(31, 111, 120, 0.08));
 }
 
 .role {
@@ -755,20 +745,7 @@ main {
   display: grid;
   grid-template-columns: 10.5rem 1fr;
   gap: 1.5rem 2.5rem;
-  padding: 1.65rem 0 1.65rem 2.15rem;
-}
-
-.role::before {
-  content: "";
-  position: absolute;
-  left: calc(11.35rem - 0.28rem);
-  top: 2rem;
-  width: 0.55rem;
-  height: 0.55rem;
-  border-radius: 50%;
-  background: var(--bg);
-  border: 2px solid var(--accent);
-  box-shadow: 0 0 0 4px rgba(31, 111, 120, 0.12);
+  padding: 1.65rem 0;
 }
 
 .role__date {
@@ -1346,11 +1323,6 @@ html.js .hero__meta li:nth-child(2) {
 
 /* Responsive */
 @media (max-width: 920px) {
-  .timeline::before,
-  .role::before {
-    display: none;
-  }
-
   .role {
     grid-template-columns: 1fr;
     gap: 0.7rem;
