@@ -731,8 +731,28 @@ main {
   font-weight: 600;
 }
 
-.role__body h3 {
-  font-size: 1.45rem;
+.role__body a:not(.btn) {
+  color: var(--accent-deep);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.role__body a:not(.btn):hover {
+  color: var(--accent);
+}
+
+.role__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.05rem 0 0;
+}
+
+.role__links .btn {
+  min-height: 42px;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.88rem;
 }
 
 /* Experience */
