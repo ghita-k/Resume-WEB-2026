@@ -204,11 +204,33 @@
               <h3>Cloud, DevOps Engineer</h3>
               <p class="role__org">Projet personnel et autoformation</p>
               <div class="role__logo-grid" aria-label="Plateformes d’autoformation">
-                <span class="role__logo-card role__logo-card--teal">
-                  <span class="role__logo-card-mark">
-                    <img src="assets/logos/cloud-devops.svg" alt="" width="40" height="40" />
+                <span class="role__logo-card role__logo-card--cloud">
+                  <span class="role__logo-card-mark" aria-label="devOps">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" width="88" height="58" role="img">
+                      <title>devOps</title>
+                      <defs>
+                        <linearGradient id="cloudTop" x1="120" y1="28" x2="120" y2="96" gradientUnits="userSpaceOnUse">
+                          <stop offset="0%" stop-color="#5EE7FF"/>
+                          <stop offset="55%" stop-color="#3BC7F5"/>
+                          <stop offset="100%" stop-color="#2E8CFF"/>
+                        </linearGradient>
+                        <linearGradient id="cloudBottom" x1="120" y1="78" x2="120" y2="138" gradientUnits="userSpaceOnUse">
+                          <stop offset="0%" stop-color="#7A4DFF"/>
+                          <stop offset="45%" stop-color="#6B2EE8"/>
+                          <stop offset="100%" stop-color="#4B18B8"/>
+                        </linearGradient>
+                        <clipPath id="cloudShape">
+                          <path d="M46 108 C18 106 14 78 42 70 C46 42 86 30 114 54 C132 30 178 34 190 62 C226 58 236 92 208 108 C200 130 58 132 46 108 Z"/>
+                        </clipPath>
+                      </defs>
+                      <g clip-path="url(#cloudShape)">
+                        <rect x="0" y="0" width="240" height="160" fill="url(#cloudTop)"/>
+                        <path fill="url(#cloudBottom)" d="M8 90 C52 76 86 104 124 88 C158 74 192 100 236 86 L236 150 L8 150 Z"/>
+                        <path fill="none" stroke="#9B7CFF" stroke-width="3.2" stroke-linecap="round" d="M18 90 C56 76 88 104 124 88 C158 74 194 100 228 87"/>
+                      </g>
+                      <text x="120" y="116" text-anchor="middle" font-family="Manrope, system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff" letter-spacing="0.4">devOps</text>
+                    </svg>
                   </span>
-                  <span class="role__logo-card-name">Cloud DevOps</span>
                 </span>
                 <span class="role__logo-card">
                   <span class="role__logo-card-mark">
