@@ -101,10 +101,12 @@
     .forEach(wrapWords);
 
   document
-    .querySelectorAll(
-      ".platform, .skill__logo, .logo-rail li, .tag-logos li, .role__company-logo"
-    )
+    .querySelectorAll(".platform, .logo-rail li, .role__company-logo")
     .forEach((el) => el.classList.add("rise", "rise--logo"));
+
+  document
+    .querySelectorAll(".skill__logo, .tag-logos li")
+    .forEach((el) => el.classList.add("rise", "rise--badge"));
 
   document
     .querySelectorAll(
@@ -124,28 +126,61 @@
       return;
     }
 
-    const parts = root.querySelectorAll(
-      ".section__label, .section__head h2, .hero__name-line, .hero__title, .hero__lead, .profile-text, .role__date, .role__place, .role__body h3, .role__org, .role__body > ul:not(.tag-logos) > li, .edu h3, .edu__school, .edu__date, .edu__place, .skill h3, .project h3, .project p, .contact-lead, .contact-panel h2"
+    const sequence = root.querySelectorAll(
+      [
+        ".section__label",
+        ".section__head h2",
+        ".hero__name-line",
+        ".hero__title",
+        ".hero__lead",
+        ".profile-text",
+        ".role__date",
+        ".role__place",
+        ".role__company-logo",
+        ".role__body h3",
+        ".role__org",
+        ".platform",
+        ".role__body > ul:not(.tag-logos) > li",
+        ".tag-logos li",
+        ".edu h3",
+        ".edu__school",
+        ".edu__date",
+        ".edu__place",
+        ".edu__logo",
+        ".edu__acred-logo",
+        ".skill h3",
+        ".skill__logo",
+        ".project__index",
+        ".project h3",
+        ".project p",
+        ".logo-rail li",
+        ".cert-strip span",
+        ".contact-lead",
+        ".contact-panel h2",
+        ".contact-actions .btn",
+      ].join(",")
     );
 
     let time = 80;
-    parts.forEach((part) => {
-      const words = part.querySelectorAll(".word");
+    sequence.forEach((el) => {
+      if (el.classList.contains("rise")) {
+        const step = el.classList.contains("rise--badge")
+          ? 90
+          : el.classList.contains("rise--chip")
+            ? 70
+            : 110;
+        show(el, time);
+        time += step;
+        return;
+      }
+
+      const words = el.querySelectorAll(".word");
       if (!words.length) {
         time += 40;
         return;
       }
       words.forEach((word, i) => show(word, time + i * 28));
       time += words.length * 28 + 70;
-    });
-
-    root.querySelectorAll(".rise--chip").forEach((el, i) => {
-      show(el, time + i * 70);
-    });
-    time += root.querySelectorAll(".rise--chip").length * 70 + 40;
-
-    root.querySelectorAll(".rise--logo").forEach((el, i) => {
-      show(el, time + i * 110);
     });
   };
 

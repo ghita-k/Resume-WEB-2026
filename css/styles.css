@@ -1189,6 +1189,10 @@ html.js .rise--chip {
   transform: translateY(12px) scale(0.86);
 }
 
+html.js .rise--badge {
+  transform: translateY(16px);
+}
+
 html.js .rise.is-visible {
   opacity: 1;
   transform: none;
