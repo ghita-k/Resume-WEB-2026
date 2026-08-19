@@ -1072,6 +1072,17 @@ main {
   border-bottom-color: currentColor;
 }
 
+.project p a:not(.btn) {
+  color: var(--accent-deep);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.project p a:not(.btn):hover {
+  color: var(--accent);
+}
+
 .project__links {
   display: flex;
   flex-wrap: wrap;
