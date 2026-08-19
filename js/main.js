@@ -42,7 +42,7 @@
   const skipWrap = (el) =>
     Boolean(
       el.closest(
-        "svg, script, style, button, .platform, .skill__logo, .tag-logos, .logo-rail, .cert-strip, .edu__logos, .edu__accreds, .role__company-logo, .hero__eyebrow, .hero__name, .hero__title, .hero__lead, .hero__actions, .hero__meta, .hero__photo, .project__links"
+        "svg, script, style, button, .platform, .skill__logo, .tag-logos, .logo-rail, .cert-strip, .edu__logos, .edu__accreds, .role__company-logo, .hero__eyebrow, .hero__name, .hero__title, .hero__lead, .hero__actions, .hero__meta, .hero__photo, .project__links, .contact-actions, .contact-panel"
       )
     );
 
@@ -91,8 +91,6 @@
         ".skill h3",
         ".project h3",
         ".project p",
-        ".contact-lead",
-        ".contact-panel h2",
       ].join(",")
     )
     .forEach(wrapWords);
@@ -107,7 +105,7 @@
 
   document
     .querySelectorAll(
-      ".cert-strip span, .edu__logo, .edu__acred-logo, .project__index, .contact-actions .btn"
+      ".cert-strip span, .edu__logo, .edu__acred-logo, .project__index"
     )
     .forEach((el) => el.classList.add("rise", "rise--chip"));
 
@@ -149,9 +147,6 @@
         ".project p",
         ".logo-rail li",
         ".cert-strip span",
-        ".contact-lead",
-        ".contact-panel h2",
-        ".contact-actions .btn",
       ].join(",")
     );
 

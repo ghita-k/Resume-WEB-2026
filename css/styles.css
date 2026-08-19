@@ -1278,6 +1278,49 @@ html.js .hero__meta li:nth-child(2) {
   animation-delay: 2.18s;
 }
 
+html.js .contact-panel.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+html.js .contact-panel .section__label,
+html.js .contact-panel h2,
+html.js .contact-lead,
+html.js .contact-actions .btn {
+  opacity: 0;
+}
+
+html.js .contact-panel.is-visible .section__label,
+html.js .contact-panel.is-visible h2,
+html.js .contact-panel.is-visible .contact-lead,
+html.js .contact-panel.is-visible .contact-actions .btn {
+  opacity: 1;
+  animation-name: heroIn;
+  animation-duration: 0.7s;
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(0.22, 1.15, 0.36, 1);
+}
+
+html.js .contact-panel.is-visible .section__label {
+  animation-delay: 0.08s;
+}
+
+html.js .contact-panel.is-visible h2 {
+  animation-delay: 0.28s;
+}
+
+html.js .contact-panel.is-visible .contact-lead {
+  animation-delay: 0.52s;
+}
+
+html.js .contact-panel.is-visible .contact-actions .btn:nth-child(1) {
+  animation-delay: 0.88s;
+}
+
+html.js .contact-panel.is-visible .contact-actions .btn:nth-child(2) {
+  animation-delay: 1.04s;
+}
+
 @keyframes heroIn {
   from {
     opacity: 0;
@@ -1413,6 +1456,10 @@ html.js .hero__meta li:nth-child(2) {
   html.js .hero__lead,
   html.js .hero__actions .btn,
   html.js .hero__meta li,
+  html.js .contact-panel .section__label,
+  html.js .contact-panel h2,
+  html.js .contact-lead,
+  html.js .contact-actions .btn,
   .btn {
     animation: none !important;
     transition: none !important;
@@ -1429,7 +1476,11 @@ html.js .hero__meta li:nth-child(2) {
   html.js .hero__title,
   html.js .hero__lead,
   html.js .hero__actions .btn,
-  html.js .hero__meta li {
+  html.js .hero__meta li,
+  html.js .contact-panel .section__label,
+  html.js .contact-panel h2,
+  html.js .contact-lead,
+  html.js .contact-actions .btn {
     opacity: 1;
     transform: none;
   }
@@ -1489,7 +1540,11 @@ html.js .hero__meta li:nth-child(2) {
   html.js .hero__title,
   html.js .hero__lead,
   html.js .hero__actions .btn,
-  html.js .hero__meta li {
+  html.js .hero__meta li,
+  html.js .contact-panel .section__label,
+  html.js .contact-panel h2,
+  html.js .contact-lead,
+  html.js .contact-actions .btn {
     opacity: 1;
     transform: none;
     animation: none !important;
