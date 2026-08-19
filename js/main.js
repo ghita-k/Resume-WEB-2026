@@ -213,4 +213,15 @@
   } else {
     reveals.forEach(revealContent);
   }
+
+  const startIntro = () => {
+    document.querySelector(".site-header")?.classList.add("is-in");
+    document.querySelector(".hero")?.classList.add("is-visible");
+  };
+
+  if (reduced) {
+    startIntro();
+  } else {
+    requestAnimationFrame(() => requestAnimationFrame(startIntro));
+  }
 })();
