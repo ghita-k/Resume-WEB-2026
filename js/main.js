@@ -42,7 +42,7 @@
   const skipWrap = (el) =>
     Boolean(
       el.closest(
-        "svg, script, style, button, .platform, .skill__logo, .tag-logos, .logo-rail, .cert-strip, .edu__logos, .edu__accreds, .role__company-logo"
+        "svg, script, style, button, .platform, .skill__logo, .tag-logos, .logo-rail, .cert-strip, .edu__logos, .edu__accreds, .role__company-logo, .hero__eyebrow, .hero__actions, .hero__meta, .hero__photo"
       )
     );
 
@@ -101,6 +101,14 @@
     .forEach(wrapWords);
 
   document
+    .querySelectorAll(".hero__eyebrow, .hero__photo")
+    .forEach((el) => el.classList.add("rise"));
+
+  document
+    .querySelectorAll(".hero__actions .btn, .hero__meta li")
+    .forEach((el) => el.classList.add("rise", "rise--chip"));
+
+  document
     .querySelectorAll(".platform, .logo-rail li, .role__company-logo")
     .forEach((el) => el.classList.add("rise", "rise--logo"));
 
@@ -130,9 +138,13 @@
       [
         ".section__label",
         ".section__head h2",
+        ".hero__eyebrow",
+        ".hero__photo",
         ".hero__name-line",
         ".hero__title",
         ".hero__lead",
+        ".hero__actions .btn",
+        ".hero__meta li",
         ".profile-text",
         ".role__date",
         ".role__place",
@@ -164,11 +176,15 @@
     let time = 80;
     sequence.forEach((el) => {
       if (el.classList.contains("rise")) {
-        const step = el.classList.contains("rise--badge")
-          ? 90
-          : el.classList.contains("rise--chip")
-            ? 70
-            : 110;
+        const step = el.classList.contains("hero__photo")
+          ? 260
+          : el.classList.contains("hero__eyebrow")
+            ? 180
+            : el.classList.contains("rise--badge")
+              ? 90
+              : el.classList.contains("rise--chip")
+                ? 70
+                : 110;
         show(el, time);
         time += step;
         return;
@@ -179,6 +195,7 @@
         time += 40;
         return;
       }
+      show(el, time);
       words.forEach((word, i) => show(word, time + i * 28));
       time += words.length * 28 + 70;
     });

@@ -367,8 +367,6 @@ main {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent);
-  opacity: 1;
-  visibility: visible;
 }
 
 .pulse {
@@ -1198,6 +1196,10 @@ html.js .rise.is-visible {
   transform: none;
 }
 
+html.js .btn.rise.is-visible:hover {
+  transform: translateY(-2px);
+}
+
 html.js .word {
   display: inline-block;
   opacity: 0;
@@ -1210,21 +1212,21 @@ html.js .word.is-visible {
   transform: none;
 }
 
-html.js .hero .hero__photo {
-  animation: photoIn 0.9s 0.12s cubic-bezier(0.22, 1.15, 0.36, 1) both;
-}
-
-html.js .hero .reveal,
-html.js .hero .word {
-  opacity: 1;
-  transform: none;
+html.js .hero__photo.rise {
   animation: none;
+  transform: translateY(22px) scale(0.92);
 }
 
-html.js .hero__eyebrow,
-html.js .hero__eyebrow .word {
-  opacity: 1 !important;
-  transform: none !important;
+html.js .hero__name-line,
+html.js .hero__title,
+html.js .hero__lead {
+  opacity: 0;
+}
+
+html.js .hero__name-line.is-visible,
+html.js .hero__title.is-visible,
+html.js .hero__lead.is-visible {
+  opacity: 1;
 }
 
 @keyframes heroIn {
@@ -1371,7 +1373,10 @@ html.js .hero__eyebrow .word {
   html.js .rise,
   html.js .word,
   html.js .site-header,
-  html.js .hero .hero__photo {
+  html.js .hero .hero__photo,
+  html.js .hero__name-line,
+  html.js .hero__title,
+  html.js .hero__lead {
     opacity: 1;
     transform: none;
   }
@@ -1424,7 +1429,10 @@ html.js .hero__eyebrow .word {
 
   html.js .reveal,
   html.js .rise,
-  html.js .word {
+  html.js .word,
+  html.js .hero__name-line,
+  html.js .hero__title,
+  html.js .hero__lead {
     opacity: 1;
     transform: none;
   }
