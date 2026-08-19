@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 300" fill="none" role="img" aria-label="Assurances Lyazidi">
+  <defs>
+    <linearGradient id="lyazidiGreen" x1="40" y1="160" x2="200" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8BC53F"/>
+      <stop offset="45%" stop-color="#5FA832"/>
+      <stop offset="100%" stop-color="#2E7A28"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer green swoosh -->
+  <path
+    d="M78 168
+       C52 140, 48 98, 72 68
+       C96 38, 148 28, 186 48
+       C204 58, 214 74, 218 92
+       C198 78, 168 72, 140 84
+       C108 98, 90 128, 92 156
+       C94 168, 86 174, 78 168Z"
+    fill="url(#lyazidiGreen)"/>
+  <!-- Inner navy crescent -->
+  <path
+    d="M118 158
+       C108 136, 112 108, 132 92
+       C152 76, 180 78, 196 94
+       C184 88, 164 90, 150 102
+       C134 116, 128 138, 132 154
+       C134 162, 124 166, 118 158Z"
+    fill="#1B2A4A"/>
+  <!-- Grey accent swoosh -->
+  <path
+    d="M132 156
+       C148 162, 176 160, 204 148"
+    stroke="#B7BCC4"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    fill="none"/>
+  <!-- Wordmark -->
+  <text x="140" y="230" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" letter-spacing="6" fill="#1B2A4A">ASSURANCES</text>
+  <text x="140" y="268" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" letter-spacing="2" fill="#1B2A4A">LYAZIDI</text>
+</svg>
