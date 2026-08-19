@@ -98,14 +98,6 @@
     .forEach(wrapWords);
 
   document
-    .querySelectorAll(".hero__eyebrow, .hero__photo, .hero__name, .hero__title, .hero__lead")
-    .forEach((el) => el.classList.add("rise"));
-
-  document
-    .querySelectorAll(".hero__actions .btn, .hero__meta li")
-    .forEach((el) => el.classList.add("rise", "rise--chip"));
-
-  document
     .querySelectorAll(".platform, .logo-rail li, .role__company-logo")
     .forEach((el) => el.classList.add("rise", "rise--logo"));
 
@@ -135,13 +127,6 @@
       [
         ".section__label",
         ".section__head h2",
-        ".hero__eyebrow",
-        ".hero__photo",
-        ".hero__name",
-        ".hero__title",
-        ".hero__lead",
-        ".hero__actions .btn",
-        ".hero__meta li",
         ".profile-text",
         ".role__date",
         ".role__place",
@@ -173,19 +158,11 @@
     let time = 80;
     sequence.forEach((el) => {
       if (el.classList.contains("rise")) {
-        const step = el.classList.contains("hero__photo") || el.classList.contains("hero__name")
-          ? 280
-          : el.classList.contains("hero__title") || el.classList.contains("hero__lead")
-            ? 240
-            : el.classList.contains("hero__eyebrow")
-              ? 180
-              : el.classList.contains("hero__actions") || el.matches(".hero__actions .btn")
-                ? 130
-                : el.classList.contains("rise--badge")
-                  ? 90
-                  : el.classList.contains("rise--chip")
-                    ? 70
-                    : 110;
+        const step = el.classList.contains("rise--badge")
+          ? 90
+          : el.classList.contains("rise--chip")
+            ? 70
+            : 110;
         show(el, time);
         time += step;
         return;
@@ -205,12 +182,6 @@
   document.querySelectorAll(".role.reveal").forEach((el, i) => {
     el.classList.add(i % 2 === 0 ? "reveal--left" : "reveal--right");
   });
-
-  const hero = document.querySelector(".hero");
-  if (hero) {
-    hero.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
-    revealContent(hero);
-  }
 
   if ("IntersectionObserver" in window) {
     const revealObserver = new IntersectionObserver(

@@ -1212,15 +1212,59 @@ html.js .word.is-visible {
   transform: none;
 }
 
-html.js .hero__photo.rise {
-  animation: none;
-  transform: translateY(22px) scale(0.92);
+html.js .hero__eyebrow,
+html.js .hero__photo,
+html.js .hero__name,
+html.js .hero__title,
+html.js .hero__lead,
+html.js .hero__actions .btn,
+html.js .hero__meta li {
+  animation-name: heroIn;
+  animation-duration: 0.7s;
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(0.22, 1.15, 0.36, 1);
 }
 
-html.js .hero__name.rise,
-html.js .hero__title.rise,
-html.js .hero__lead.rise {
-  transform: translateY(28px);
+html.js .hero__eyebrow {
+  animation-delay: 0.1s;
+}
+
+html.js .hero__photo {
+  animation-name: photoIn;
+  animation-duration: 0.85s;
+  animation-delay: 0.32s;
+}
+
+html.js .hero__name {
+  animation-delay: 0.58s;
+}
+
+html.js .hero__title {
+  animation-delay: 0.88s;
+}
+
+html.js .hero__lead {
+  animation-delay: 1.18s;
+}
+
+html.js .hero__actions .btn:nth-child(1) {
+  animation-delay: 1.52s;
+}
+
+html.js .hero__actions .btn:nth-child(2) {
+  animation-delay: 1.68s;
+}
+
+html.js .hero__actions .btn:nth-child(3) {
+  animation-delay: 1.84s;
+}
+
+html.js .hero__meta li:nth-child(1) {
+  animation-delay: 2.04s;
+}
+
+html.js .hero__meta li:nth-child(2) {
+  animation-delay: 2.18s;
 }
 
 @keyframes heroIn {
@@ -1237,11 +1281,11 @@ html.js .hero__lead.rise {
 @keyframes photoIn {
   from {
     opacity: 0;
-    transform: scale(0.78);
+    transform: translateY(20px) scale(0.88);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: none;
   }
 }
 
@@ -1356,7 +1400,13 @@ html.js .hero__lead.rise {
   html.js .rise,
   html.js .word,
   html.js .site-header,
-  html.js .hero .hero__photo,
+  html.js .hero__eyebrow,
+  html.js .hero__photo,
+  html.js .hero__name,
+  html.js .hero__title,
+  html.js .hero__lead,
+  html.js .hero__actions .btn,
+  html.js .hero__meta li,
   .btn {
     animation: none !important;
     transition: none !important;
@@ -1367,7 +1417,13 @@ html.js .hero__lead.rise {
   html.js .rise,
   html.js .word,
   html.js .site-header,
-  html.js .hero .hero__photo {
+  html.js .hero__eyebrow,
+  html.js .hero__photo,
+  html.js .hero__name,
+  html.js .hero__title,
+  html.js .hero__lead,
+  html.js .hero__actions .btn,
+  html.js .hero__meta li {
     opacity: 1;
     transform: none;
   }
@@ -1420,9 +1476,17 @@ html.js .hero__lead.rise {
 
   html.js .reveal,
   html.js .rise,
-  html.js .word {
+  html.js .word,
+  html.js .hero__eyebrow,
+  html.js .hero__photo,
+  html.js .hero__name,
+  html.js .hero__title,
+  html.js .hero__lead,
+  html.js .hero__actions .btn,
+  html.js .hero__meta li {
     opacity: 1;
     transform: none;
+    animation: none !important;
   }
 
   a {
