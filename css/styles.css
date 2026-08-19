@@ -639,11 +639,26 @@ html.js .hero .hero__identity.reveal {
 
 .role__company-logos {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.45rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.4rem;
   margin-top: 1rem;
   width: 100%;
+}
+
+.role__platform {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.role__platform-name {
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  letter-spacing: -0.01em;
 }
 
 .role__company-logo {
@@ -660,14 +675,14 @@ html.js .hero .hero__identity.reveal {
 
 .role__company-logos .role__company-logo {
   margin-top: 0;
-  width: 3.35rem;
-  height: 3.35rem;
-  flex: 0 0 3.35rem;
+  width: 2.35rem;
+  height: 2.35rem;
+  flex: 0 0 2.35rem;
 }
 
 .role__company-logo--img {
-  padding: 0.28rem;
-  border-radius: 0.7rem;
+  padding: 0.22rem;
+  border-radius: 0.55rem;
   background: #fff;
   border: 1px solid var(--line);
 }
