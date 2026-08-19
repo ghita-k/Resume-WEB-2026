@@ -1,0 +1,26 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Variable files that may contain secrets
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# CLI configuration / plan output
+.terraformrc
+terraform.rc
+*.tfplan
+
+# Lock file is kept (see below) but override files are ignored
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
