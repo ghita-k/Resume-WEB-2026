@@ -639,26 +639,11 @@ html.js .hero .hero__identity.reveal {
 
 .role__company-logos {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 0.4rem;
   margin-top: 1rem;
   width: 100%;
-}
-
-.role__platform {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  min-width: 0;
-}
-
-.role__platform-name {
-  font-size: 0.72rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--ink);
-  letter-spacing: -0.01em;
 }
 
 .role__company-logo {
@@ -674,15 +659,17 @@ html.js .hero .hero__identity.reveal {
 }
 
 .role__company-logos .role__company-logo {
+  position: relative;
   margin-top: 0;
-  width: 2.35rem;
-  height: 2.35rem;
-  flex: 0 0 2.35rem;
+  width: 4.55rem;
+  height: 4.55rem;
+  flex: 0 0 4.55rem;
+  overflow: hidden;
+  border-radius: 0.7rem;
 }
 
 .role__company-logo--img {
-  padding: 0.22rem;
-  border-radius: 0.55rem;
+  padding: 0.28rem 0.28rem 0.85rem;
   background: #fff;
   border: 1px solid var(--line);
 }
@@ -692,6 +679,23 @@ html.js .hero .hero__identity.reveal {
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+.role__logo-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 0.16rem 0.12rem 0.2rem;
+  font-size: 0.48rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, transparent, rgba(18, 32, 39, 0.82) 42%);
+  pointer-events: none;
 }
 
 .role__company-logo svg {
