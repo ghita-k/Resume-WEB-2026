@@ -150,14 +150,14 @@
       ].join(",")
     );
 
-    let time = 80;
+    let time = 60;
     sequence.forEach((el) => {
       if (el.classList.contains("rise")) {
         const step = el.classList.contains("rise--badge")
-          ? 90
+          ? 70
           : el.classList.contains("rise--chip")
-            ? 70
-            : 110;
+            ? 55
+            : 85;
         show(el, time);
         time += step;
         return;
@@ -169,8 +169,8 @@
         return;
       }
       show(el, time);
-      words.forEach((word, i) => show(word, time + i * 28));
-      time += words.length * 28 + 70;
+      words.forEach((word, i) => show(word, time + i * 22));
+      time += words.length * 22 + 55;
     });
   };
 
@@ -223,5 +223,7 @@
     startIntro();
   } else {
     requestAnimationFrame(() => requestAnimationFrame(startIntro));
+    // Failsafe: never leave the hero hidden if a rAF is delayed (e.g. background tab).
+    setTimeout(startIntro, 1200);
   }
 })();
